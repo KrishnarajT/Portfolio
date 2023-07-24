@@ -10,7 +10,7 @@ import {
 	DevicePhoneMobileIcon,
 	HomeModernIcon,
 	HomeIcon,
-	InformationCircleIcon
+	InformationCircleIcon,
 } from "@heroicons/react/24/solid";
 import { Link, NavLink } from "react-router-dom";
 
@@ -21,9 +21,11 @@ export function Navbar() {
 	return (
 		<div className="navbar bg-base-300 rounded-xl text-primary-content">
 			<div className="">
-				<a className="btn btn-ghost normal-case text-xl" href=".">
-					Krishnaraj
-				</a>
+				<NavLink to={"/"}>
+					<a className="btn btn-ghost normal-case text-xl">
+						Krishnaraj
+					</a>
+				</NavLink>
 			</div>
 			<div className="flex-row justify-center flex-1">
 				<ul className="menu menu-horizontal px-1">
