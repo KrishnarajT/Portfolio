@@ -9,11 +9,7 @@ import {
 	MoonIcon,
 	BookmarkIcon,
 	DevicePhoneMobileIcon,
-	HomeModernIcon,
-	HomeIcon,
 	InformationCircleIcon,
-	UserCircleIcon,
-	Bars3BottomLeftIcon,
 	Bars3Icon,
 } from "@heroicons/react/24/solid";
 import { Link, NavLink } from "react-router-dom";
@@ -25,12 +21,15 @@ export function Navbar() {
 	}, []);
 
 	const { theme, setTheme } = React.useContext(ThemeContext);
-	
+	useEffect(() => {
+		console.log("theme changed to", theme);
+	}, [theme]);
+
 	return (
 		<div className="pr-4 mr-4">
 			<div
-				className="navbar bg-secondary rounded-xl text-secondary-content flex-row-reverse justify-between m-4 
-			md:flex-row"
+				className={`navbar bg-secondary rounded-xl text-secondary-content flex-row-reverse justify-between m-4 
+			md:flex-row`}
 			>
 				{/* name */}
 				<div
@@ -83,20 +82,22 @@ export function Navbar() {
 									<li
 										data-set-theme="cupcake"
 										className="text-lg"
+										onClick={() => setTheme("light")}
 									>
-										<a>
+										<div>
 											<SunIcon className="w-8 h-8" />
 											Light
-										</a>
+										</div>
 									</li>
 									<li
 										className="text-lg"
 										data-set-theme="dracula"
+										onClick={() => setTheme("dark")}
 									>
-										<a>
+										<div>
 											<MoonIcon className="w-8 h-6" />
 											Dark
-										</a>
+										</div>
 									</li>
 								</ul>
 							</details>
@@ -149,6 +150,9 @@ export function Navbar() {
 												<li
 													data-set-theme="cupcake"
 													className="text-lg"
+													onClick={() =>
+														setTheme("light")
+													}
 												>
 													<a>
 														<SunIcon className="w-8 h-8" />
@@ -158,6 +162,9 @@ export function Navbar() {
 												<li
 													className="text-lg"
 													data-set-theme="dracula"
+													onClick={() =>
+														setTheme("dark")
+													}
 												>
 													<a>
 														<MoonIcon className="w-8 h-6" />

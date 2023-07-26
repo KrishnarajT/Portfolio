@@ -1,9 +1,16 @@
-#mainbg {
+#mainbglight {
     background-image: url('../assets/img/beams.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+}
+
+#mainbgdark {
+    /* background-image: url('../assets/img/beams.jpg'); */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #introsvg {
@@ -12,7 +19,10 @@
     position: absolute;
     top: 0;
     left: 0; */
+    /* width: 50vw; */
+    /* height: 10vh; */
     background-image: url('../assets/undraw_hello_re_3evm.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
