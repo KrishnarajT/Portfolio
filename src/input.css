@@ -46,3 +46,30 @@ body {
     font-family: "quicksand", sans-serif;
     box-shadow: var(--shadow-elevation-high);
 }
+
+/* media queries fro separate screens */
+
+@media (min-width: 640px) {
+    body {
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+    }
+}
+
+@media (min-width: 1536px) {
+    body {
+    }
+}

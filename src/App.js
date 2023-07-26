@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Example from "./components/Nav";
 
 function App() {
 	useEffect(() => {
