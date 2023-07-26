@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Example from "./components/Nav";
+import ThemeContextProvider from "./context/ThemeContext";
 
 function App() {
 	useEffect(() => {
@@ -14,15 +14,17 @@ function App() {
 	}, []);
 
 	return (
-		<div className="">
-			<Navbar />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/about" element={<About />} />
-			</Routes>
-		</div>
+		<ThemeContextProvider>
+			<div className="">
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/about" element={<About />} />
+				</Routes>
+			</div>
+		</ThemeContextProvider>
 	);
 }
 
