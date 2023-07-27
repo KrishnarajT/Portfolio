@@ -14,7 +14,6 @@ import {
 	IconBrandGmail,
 	IconBrandInstagram,
 	IconBrandLinkedin,
-	IconBrandStackoverflow,
 	IconBrandTelegram,
 	IconBrandWhatsapp,
 	IconDeviceMobileMessage,
@@ -272,7 +271,7 @@ const Home = () => {
 						>
 							<IconBrandDiscord className="w-8 h-8" />
 						</button>
-						<button
+						{/* <button
 							className="btn btn-neutral btn-circle btn-lg"
 							onClick={() => {
 								window.open(
@@ -282,7 +281,7 @@ const Home = () => {
 							}}
 						>
 							<IconBrandStackoverflow className="w-8 h-8" />
-						</button>
+						</button> */}
 					</div>
 				</div>
 				<NavLink to={"/contact"} className="m-4 mt-10">
@@ -291,6 +290,10 @@ const Home = () => {
 						<IconPhonePlus className="w-5 h-5" />
 					</button>
 				</NavLink>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
 			</section>
 			<div class="wrapper pb-9">
 				<div
