@@ -36,6 +36,13 @@ module.exports = {
 					"--tab-border": "1px", // border width of tabs
 					"--tab-radius": "0.5rem", // border radius of tabs
 				},
+				cupcake: {
+					...require("daisyui/src/theming/themes")[
+						"[data-theme=cupcake]"
+					],
+					// neutral: "#f0ae3a",
+					"base-100": "#ffffff",
+				},
 			},
 			"light",
 			"dark",
@@ -68,7 +75,7 @@ module.exports = {
 			"winter",
 		],
 
-		darkTheme: "dark", // name of one of the included themes for dark mode
+		darkTheme: "dracula", // name of one of the included themes for dark mode
 		base: true, // applies background color and foreground color for root element by default
 		styled: true, // include daisyUI colors and design decisions for all components
 		utils: true, // adds responsive and modifier utility classes

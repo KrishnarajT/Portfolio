@@ -13,7 +13,7 @@
     background-position: center;
 }
 
-#introsvg {
+#introsvg_light {
     /* width: 100%;
     height: 100%;
     position: absolute;
@@ -21,8 +21,56 @@
     left: 0; */
     /* width: 50vw; */
     /* height: 10vh; */
-    background-image: url('../assets/undraw_hello_re_3evm.svg');
+    background-image: url('../assets/undraw_hello_re_3evm_light.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+#introsvg_dark {
+    /* width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; */
+    /* width: 50vw; */
+    /* height: 10vh; */
+    background-image: url('../assets/undraw_hello_re_3evm_dark.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.divider-light {
+    position: relative;
+    /* margin-top: 90px; */
+    height:1px;
+}
+
+.div-transparent-light:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
+
+.divider-dark {
+    position: relative;
+    /* margin-top: 90px; */
+    height:1px;
+}
+
+.div-transparent-dark:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(225, 228, 235), transparent);
 }
