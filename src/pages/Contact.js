@@ -14,6 +14,8 @@ import {
 	IconPhonePlus,
 } from "@tabler/icons-react";
 import { ThemeContext } from "../context/ThemeContext";
+import { ArrowUpRightIcon, CheckBadgeIcon } from "@heroicons/react/24/solid";
+
 
 const Contact = () => {
 	return (
@@ -142,13 +144,30 @@ const Contact = () => {
 						</button>
 					</div>
 				</div>
-				<NavLink to={"/projects"} className="m-4 mt-10">
+				<div className="flex flex-row gap-4 justify-center">
+
+
+				<NavLink to={"/projects"} className="m-4">
 					<button className="btn btn-secondary btn-lg ">
-						Let's get in touch !
-						<IconPhonePlus className="w-5 h-5" />
+						Visit Projects{" "}
+						<ArrowUpRightIcon className="w-5 h-5" />
 					</button>
 				</NavLink>
+				<NavLink to={"/about"} className="m-4">
+					<button className="btn btn-secondary btn-lg ">
+						Learn more about Me <ArrowUpRightIcon className="w-5 h-5" />
+					</button>
+				</NavLink>
+				</div>
 			</section>
+			<div className="toast toast-bottom toast-center duration-300 transform-gpu ease-in-out hidden md:toast-end">
+				<div className="alert alert-success">
+					<span className="flex items-center gap-4 text-2xl">
+						<CheckBadgeIcon className="w-10 h-10" />
+						Copied to Clipboard!
+					</span>
+				</div>
+			</div>
 		</div>
 	);
 };

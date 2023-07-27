@@ -29,16 +29,17 @@ const About = () => {
 									: "introsvg_dark_about"
 							}
 							className="p-4 m-4 min-w-[80vw] min-h-[25vh]
-                        md:w-full md:h-full md:min-w-[40vw] md:min-h-[30vh]"
+                        md:w-full md:h-full md:min-w-[50vw] md:min-h-[50vh]"
 						></div>
 						<div>
 							<div
 								className="text-5xl text-center p-4
+								md:text-7xl
                         "
 							>
 								Greetings!
 							</div>
-							<div className="text-3xl break-words p-4 text-center">
+							<div className="text-3xl break-words p-4 text-center md:text-4xl">
 								I am Krishnaraj Thadesar! An Aspiring{" "}
 								<span className="text-accent">
 									Data Scientist
@@ -54,7 +55,7 @@ const About = () => {
 				</div>
 			</div>
 
-			<div class="wrapper pb-9 mt-16">
+			<div class="wrapper pb-9 m.t-16">
 				<div
 					className={
 						theme === "light"
@@ -72,7 +73,7 @@ const About = () => {
 			>
 				<div className="text-5xl p-4 m-4">Who I am</div>
 				<IconUserQuestion className="w-16 h-16" />
-				<div className="text-center text-2xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
 					basic info and swot analysis in an accordian thats
 					collapsible. So that would be things im good at, things im
 					bad at, things im learning, and things im interested in.
@@ -83,6 +84,7 @@ const About = () => {
 				</div>
 			</section>
 			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"
@@ -100,7 +102,7 @@ const About = () => {
 			>
 				<div className="text-5xl p-4 m-4">What I do</div>
 				<IconUserQuestion className="w-16 h-16" />
-				<div className="text-center text-2xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
 					this will have all the techincal things. a list of things
 					that i do, then a graph of languages i know, then the things
 					i am best at, what im learning and stuff in an accordian
@@ -108,6 +110,7 @@ const About = () => {
 				</div>
 			</section>
 			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"
@@ -125,11 +128,13 @@ const About = () => {
 			>
 				<div className="text-5xl p-4 m-4">Education</div>
 				<IconUserQuestion className="w-16 h-16" />
-				<div className="text-center text-2xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
 					this will be a timeline and schools that iv been to.
 				</div>
 			</section>
+
 			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"
@@ -138,21 +143,23 @@ const About = () => {
 					}
 				></div>
 			</div>
-
 			{/* section 4 */}
 
 			<section
 				id="about_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<div className="text-5xl p-4 m-4 text-center">Work Experience</div>
+				<div className="text-5xl p-4 m-4 text-center">
+					Work Experience
+				</div>
 				<IconUserQuestion className="w-16 h-16" />
-				<div className="text-center text-2xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
 					some random things iv done. link them. and also a timeline
 					maybe.
 				</div>
 			</section>
 			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"
@@ -168,13 +175,17 @@ const About = () => {
 				id="about_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<div className="text-3xl p-4 m-4 text-center">Certifications and Achievements</div>
+				<div className="text-3xl p-4 m-4 text-center">
+					Certifications and Achievements
+				</div>
 				<IconUserQuestion className="w-16 h-16" />
-				<div className="text-center text-2xl p-4 m-4 break-words">
-					Maybe link them to some certificates or just write there are none. 
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
+					Maybe link them to some certificates or just write there are
+					none.
 				</div>
 			</section>
 			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"
@@ -184,16 +195,17 @@ const About = () => {
 				></div>
 			</div>
 
-
 			{/*  this is the last section */}
 
 			<section
 				id="about_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<div className="text-4xl text-center p-4">Interested in Hiring? </div>
+				<div className="text-4xl text-center p-4">
+					Interested in Hiring?{" "}
+				</div>
 				{/* <IconUserQuestion className="w-16 h-16" /> */}
-				<div className="text-center text-2xl break-words"></div>
+				<div className="text-center text-2xl md:text-4xl break-words"></div>
 				<NavLink to={"/projects"} className="m-4 mt-10">
 					<button className="btn btn-secondary btn-lg ">
 						Look at my projects{" "}
@@ -202,8 +214,7 @@ const About = () => {
 				</NavLink>
 				<NavLink to={"/contact"} className="m-4">
 					<button className="btn btn-secondary btn-lg ">
-						Get in touch!{" "}
-						<ArrowUpRightIcon className="w-5 h-5" />
+						Get in touch! <ArrowUpRightIcon className="w-5 h-5" />
 					</button>
 				</NavLink>
 			</section>

@@ -78,7 +78,7 @@ const Home = () => {
 				</button>
 			</div>
 			<section></section>
-			<div class="wrapper pb-9">
+			<div class="wrapper pb-9">.
 				<div
 					className={
 						theme === "light"
@@ -108,7 +108,7 @@ const Home = () => {
 					</button>
 				</NavLink>
 			</section>
-			<div class="wrapper pb-9">
+			<div class="wrapper pb-9">.
 				<div
 					className={
 						theme === "light"
@@ -151,7 +151,7 @@ const Home = () => {
 					</button>
 				</NavLink>
 			</section>
-			<div class="wrapper pb-9">
+			<div class="wrapper pb-9">.
 				<div
 					className={
 						theme === "light"
@@ -295,7 +295,7 @@ const Home = () => {
 				<br></br>
 				<br></br>
 			</section>
-			<div class="wrapper pb-9">
+			<div class="wrapper pb-9">.
 				<div
 					className={
 						theme === "light"
