@@ -61,7 +61,7 @@ const About = () => {
 								md:text-7xl
                         "
 							>
-								Greetings!
+								<span className="text-accent">Greetings!</span>
 							</div>
 							<div className="text-3xl break-words p-4 text-center md:text-4xl">
 								I am Krishnaraj Thadesar! An Aspiring{" "}

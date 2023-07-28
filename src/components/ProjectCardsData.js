@@ -2,7 +2,7 @@ const projects_major = [
 	{
 		title: "Project 1",
 		description: "This is a project",
-		image: "https://source.unsplash.com/random",
+		// image: "https://source.unsplash.com/random",
 		link: "https://www.google.com",
 		tags: ["Project"],
 		new: true,

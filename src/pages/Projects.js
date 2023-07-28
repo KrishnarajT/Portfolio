@@ -26,7 +26,7 @@ const Projects = () => {
 				<div className="flex justify-center">
 					<div
 						className="flex flex-col items-center
-                md:justify-between md:flex-row-reverse"
+                lg:justify-between lg:flex-row-reverse"
 					>
 						<div
 							id={
@@ -35,7 +35,7 @@ const Projects = () => {
 									: "introsvg_dark_projects"
 							}
 							className="p-4 m-4 min-w-[80vw] min-h-[25vh]
-                        md:w-full md:h-full md:min-w-[50vw] md:min-h-[50vh]"
+                        lg:w-full lg:h-full lg:min-w-[50vw] lg:min-h-[50vh]"
 						></div>
 						<div>
 							<div
@@ -43,18 +43,23 @@ const Projects = () => {
 								md:text-7xl
                         "
 							>
-								Greetings!
+								Welcome to{" "}
+								<span className="text-accent">Projects!</span>{" "}
 							</div>
 							<div className="text-3xl break-words p-4 text-center md:text-4xl">
-								I am Krishnaraj Thadesar! An Aspiring{" "}
+								This page contains a simple list of projects
+								I've done over the years. It can help you get an
+								insight into my skills and interests.
+								<br></br> <br></br> Some are based on{" "}
 								<span className="text-accent">
-									Data Scientist
+									Data Science
 								</span>
-								, a Full Stack Developer, and a 3rd year
-								Undergrad at MITWPU in Pune.
-								<br></br>
-								This page will help you get to know me a little
-								better!
+								, some are apps published on the{" "}
+								<span className="text-accent">Play Store</span>,
+								while some are{" "}
+								<span className="text-accent">Websites</span>,
+								and some are just projects I've done{" "}
+								<span className="text-accent">for fun. </span>.
 							</div>
 						</div>
 					</div>
