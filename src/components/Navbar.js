@@ -26,7 +26,7 @@ export function Navbar() {
 	}, [theme]);
 
 	return (
-		<div className="pr-4 mr-4">
+		<div className="pr-4 mr-4 z-50">
 			<div
 				className={`navbar bg-secondary rounded-xl text-secondary-content flex-row-reverse justify-between m-4 
 			md:flex-row`}
@@ -113,7 +113,7 @@ export function Navbar() {
 								<summary className="text-lg md:text-2xl">
 									<Bars3Icon className="w-8 h-8" />
 								</summary>
-								<ul className="p-2 bg-base-100 text-base-content">
+								<ul className="p-2 bg-base-100 text-base-content z-50">
 									<li className="text-lg md:text-2xl">
 										<NavLink
 											to={"/projects"}

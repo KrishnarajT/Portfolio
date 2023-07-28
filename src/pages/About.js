@@ -439,7 +439,11 @@ const About = () => {
 						<li className="step step-primary">
 							<div className="flex flex-col text-left">
 								<span
-									className="text-2xl text-primary hover:text-accent cursor-pointer"
+									className={`text-2xl ${
+										theme === "light"
+											? "text-neutral"
+											: "text-primary"
+									} hover:text-accent cursor-pointe`}
 									onClick={() => {
 										window.open(
 											"http://arunodayaschool.com/"
@@ -455,7 +459,11 @@ const About = () => {
 						<li className="step step-primary">
 							<div className="flex flex-col text-left">
 								<span
-									className="text-2xl text-primary hover:text-accent cursor-pointer"
+									className={`text-2xl ${
+										theme === "light"
+											? "text-neutral"
+											: "text-primary"
+									} hover:text-accent cursor-pointer`}
 									onClick={() => {
 										window.open(
 											"https://indianschooldsm.ac.tz/"
@@ -473,7 +481,11 @@ const About = () => {
 						<li className="step step-primary">
 							<div className="flex flex-col text-left">
 								<span
-									className="text-2xl text-primary hover:text-accent cursor-pointer"
+									className={`text-2xl ${
+										theme === "light"
+											? "text-neutral"
+											: "text-primary"
+									} hover:text-accent cursor-pointer`}
 									onClick={() => {
 										window.open(
 											"https://www.stxavierschoolthane.com/"
@@ -489,7 +501,11 @@ const About = () => {
 						<li className="step step-primary">
 							<div className="flex flex-col text-left">
 								<span
-									className="text-2xl text-primary hover:text-accent cursor-pointer"
+									className={`text-2xl ${
+										theme === "light"
+											? "text-neutral"
+											: "text-primary"
+									} hover:text-accent cursor-pointer`}
 									onClick={() => {
 										window.open(
 											"https://bhavansqatar.org/"
@@ -508,7 +524,11 @@ const About = () => {
 						<li className="step step-primary">
 							<div className="flex flex-col text-left">
 								<span
-									className="text-2xl text-primary hover:text-accent cursor-pointer"
+									className={`text-2xl ${
+										theme === "light"
+											? "text-neutral"
+											: "text-primary"
+									} hover:text-accent cursor-pointer`}
 									onClick={() => {
 										window.open(
 											"https://www.mknspune.com/"
@@ -527,7 +547,11 @@ const About = () => {
 						<li className="step step-primary mt-4">
 							<div className="flex flex-col text-left">
 								<span
-									className="text-2xl text-primary hover:text-accent cursor-pointer"
+									className={`text-2xl ${
+										theme === "light"
+											? "text-neutral"
+											: "text-primary"
+									} hover:text-accent cursor-pointer`}
 									onClick={() => {
 										window.open(
 											"https://www.mitwpu.edu.in/"
@@ -636,7 +660,13 @@ const About = () => {
 				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
 					<ul className="list-disc">
 						<li className="text-xl bg-base-200 p-4 rounded-xl my-2">
-							<div className="text-2xl text-primary flex flex-col justify-center">
+							<div
+								className={`text-2xl ${
+									theme === "light"
+										? "text-neutral"
+										: "text-primary"
+								} flex flex-col justify-center`}
+							>
 								<a
 									href="https://www.coursera.org/account/accomplishments/certificate/7Q4ZQZQZQZQZ"
 									target="_blank"
@@ -651,7 +681,13 @@ const About = () => {
 							</div>
 						</li>
 						<li className="text-xl bg-base-200 p-4 rounded-xl my-2">
-							<div className="text-2xl text-primary flex flex-col justify-center">
+							<div
+								className={`text-2xl ${
+									theme === "light"
+										? "text-neutral"
+										: "text-primary"
+								} flex flex-col justify-center`}
+							>
 								<a
 									href="https://www.coursera.org/account/accomplishments/certificate/7Q4ZQZQZQZQZ"
 									target="_blank"
@@ -666,7 +702,13 @@ const About = () => {
 							</div>
 						</li>
 						<li className="text-xl bg-base-200 p-4 rounded-xl my-2">
-							<div className="text-2xl text-primary flex flex-col justify-center">
+							<div
+								className={`text-2xl ${
+									theme === "light"
+										? "text-neutral"
+										: "text-primary"
+								} flex flex-col justify-center`}
+							>
 								<a
 									href="https://www.coursera.org/account/accomplishments/certificate/7Q4ZQZQZQZQZ"
 									target="_blank"
