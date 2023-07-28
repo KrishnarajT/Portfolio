@@ -91,7 +91,7 @@ const Home = () => {
 				id="projects_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<IconApiApp className="w-24 h-24" />
+				<IconApiApp stroke={1} className="w-24 h-24" />
 				<div className="text-center text-2xl p-4 m-4">
 					I have worked on several Projects ever since I started
 					coding. They span across fields like
@@ -121,7 +121,7 @@ const Home = () => {
 				id="about_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<IconUserQuestion className="w-24 h-24" />
+				<IconUserQuestion stroke={1} className="w-24 h-24" />
 				<div className="text-center text-2xl p-4 m-4 break-words">
 					I am a 3rd Year Undergrad at MIT World Peace Univeristy in
 					Pune, pursuing my Bachelors in Computer Science, Majoring in
@@ -164,7 +164,7 @@ const Home = () => {
 				id="contact_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<IconDeviceMobileMessage className="w-24 h-24" />
+				<IconDeviceMobileMessage stroke={1} className="w-24 h-24" />
 				<div className="text-center text-2xl p-4 m-4">
 					You can contact me via my Email, Phone or any social Media.
 					I am always open to new opportunities and collaborations,
@@ -186,7 +186,7 @@ const Home = () => {
 								// window.open("tel:+919834312135", "_blank");
 							}}
 						>
-							<IconPhoneCall className="w-8 h-8" />
+							<IconPhoneCall stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -194,7 +194,7 @@ const Home = () => {
 								window.open("https://wa.link/zu05s5", "_blank");
 							}}
 						>
-							<IconBrandWhatsapp className="w-8 h-8" />
+							<IconBrandWhatsapp stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -205,7 +205,7 @@ const Home = () => {
 								);
 							}}
 						>
-							<IconBrandGmail className="w-8 h-8" />
+							<IconBrandGmail stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -225,7 +225,7 @@ const Home = () => {
 							}}
 							// copy to clipboard and show toast.
 						>
-							<IconBrandGithub className="w-8 h-8" />
+							<IconBrandGithub stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -236,7 +236,7 @@ const Home = () => {
 								);
 							}}
 						>
-							<IconBrandTelegram className="w-8 h-8" />
+							<IconBrandTelegram stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -247,7 +247,7 @@ const Home = () => {
 								);
 							}}
 						>
-							<IconBrandLinkedin className="w-8 h-8" />
+							<IconBrandLinkedin stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -258,7 +258,7 @@ const Home = () => {
 								);
 							}}
 						>
-							<IconBrandInstagram className="w-8 h-8" />
+							<IconBrandInstagram stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -269,7 +269,7 @@ const Home = () => {
 								);
 							}}
 						>
-							<IconBrandDiscord className="w-8 h-8" />
+							<IconBrandDiscord stroke={1} className="w-8 h-8" />
 						</button>
 						{/* <button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -280,14 +280,14 @@ const Home = () => {
 								);
 							}}
 						>
-							<IconBrandStackoverflow className="w-8 h-8" />
+							<IconBrandStackoverflow stroke={1} className="w-8 h-8" />
 						</button> */}
 					</div>
 				</div>
 				<NavLink to={"/contact"} className="m-4 mt-10">
 					<button className="btn btn-secondary btn-lg ">
 						Let's get in touch !
-						<IconPhonePlus className="w-5 h-5" />
+						<IconPhonePlus stroke={1} className="w-5 h-5" />
 					</button>
 				</NavLink>
 				<br></br>

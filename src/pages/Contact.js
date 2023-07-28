@@ -16,7 +16,6 @@ import {
 import { ThemeContext } from "../context/ThemeContext";
 import { ArrowUpRightIcon, CheckBadgeIcon } from "@heroicons/react/24/solid";
 
-
 const Contact = () => {
 	return (
 		<div className="">
@@ -24,7 +23,7 @@ const Contact = () => {
 				id="contact_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<IconDeviceMobileMessage className="w-24 h-24" />
+				<IconDeviceMobileMessage stroke={1} className="w-24 h-24" />
 				<div className="text-center text-2xl p-4 m-4">
 					You can contact me via my Email, Phone or any social Media.
 					I am always open to new opportunities and collaborations,
@@ -46,7 +45,7 @@ const Contact = () => {
 								// window.open("tel:+919834312135", "_blank");
 							}}
 						>
-							<IconPhoneCall className="w-8 h-8" />
+							<IconPhoneCall stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -54,7 +53,7 @@ const Contact = () => {
 								window.open("https://wa.link/zu05s5", "_blank");
 							}}
 						>
-							<IconBrandWhatsapp className="w-8 h-8" />
+							<IconBrandWhatsapp stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -65,7 +64,7 @@ const Contact = () => {
 								);
 							}}
 						>
-							<IconBrandGmail className="w-8 h-8" />
+							<IconBrandGmail stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -85,7 +84,7 @@ const Contact = () => {
 							}}
 							// copy to clipboard and show toast.
 						>
-							<IconBrandGithub className="w-8 h-8" />
+							<IconBrandGithub stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -96,7 +95,7 @@ const Contact = () => {
 								);
 							}}
 						>
-							<IconBrandTelegram className="w-8 h-8" />
+							<IconBrandTelegram stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -107,7 +106,7 @@ const Contact = () => {
 								);
 							}}
 						>
-							<IconBrandLinkedin className="w-8 h-8" />
+							<IconBrandLinkedin stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -118,7 +117,7 @@ const Contact = () => {
 								);
 							}}
 						>
-							<IconBrandInstagram className="w-8 h-8" />
+							<IconBrandInstagram stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -129,7 +128,7 @@ const Contact = () => {
 								);
 							}}
 						>
-							<IconBrandDiscord className="w-8 h-8" />
+							<IconBrandDiscord stroke={1} className="w-8 h-8" />
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -140,24 +139,23 @@ const Contact = () => {
 								);
 							}}
 						>
-							<IconBrandStackoverflow className="w-8 h-8" />
+							<IconBrandStackoverflow stroke={1} className="w-8 h-8" />
 						</button>
 					</div>
 				</div>
 				<div className="flex flex-row gap-4 justify-center">
-
-
-				<NavLink to={"/projects"} className="m-4">
-					<button className="btn btn-secondary btn-lg ">
-						Visit Projects{" "}
-						<ArrowUpRightIcon className="w-5 h-5" />
-					</button>
-				</NavLink>
-				<NavLink to={"/about"} className="m-4">
-					<button className="btn btn-secondary btn-lg ">
-						Learn more about Me <ArrowUpRightIcon className="w-5 h-5" />
-					</button>
-				</NavLink>
+					<NavLink to={"/projects"} className="m-4">
+						<button className="btn btn-secondary btn-lg ">
+							Visit Projects{" "}
+							<ArrowUpRightIcon className="w-5 h-5" />
+						</button>
+					</NavLink>
+					<NavLink to={"/about"} className="m-4">
+						<button className="btn btn-secondary btn-lg ">
+							Learn more about Me{" "}
+							<ArrowUpRightIcon className="w-5 h-5" />
+						</button>
+					</NavLink>
 				</div>
 			</section>
 			<div className="toast toast-bottom toast-center duration-300 transform-gpu ease-in-out hidden md:toast-end">
