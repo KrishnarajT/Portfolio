@@ -68,3 +68,45 @@
     height: 1px;
     background-image: linear-gradient(to right, transparent, rgb(225, 228, 235), transparent);
 }
+
+#mldssvg_light_projects {
+    background-image: url('../assets/undraw_charts_re_5qe9.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#mldssvg_dark_projects {
+    background-image: url('../assets/undraw_charts_re_5qe9.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#devsvg_dark_projects {
+    background-image: url('../assets/undraw_building_websites_i78t.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#devsvg_light_projects {
+    background-image: url('../assets/undraw_building_websites_i78t.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#majorssvg_dark_projects {
+    background-image: url('../assets/undraw_organizing_projects_re_9p1k.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#majorssvg_light_projects {
+    background-image: url('../assets/undraw_organizing_projects_re_9p1k.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

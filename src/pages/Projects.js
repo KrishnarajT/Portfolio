@@ -221,8 +221,17 @@ const Projects = () => {
 				<div className="flex justify-center p-4">
 					<div
 						className="flex flex-wrap justify-center gap-x-4 gap-y-8 w-4/5
-					2xl:justify-start self-center justify-self-center"
+						2xl:w-full items-end 2xl:justify-center self-center justify-self-center"
 					>
+						<div
+							id={
+								theme === "light"
+									? "majorssvg_light_projects"
+									: "majorssvg_dark_projects"
+							}
+							className="p-4 m-4 hidden 2xl:flex
+                        2xl:w-full 2xl:h-full 2xl:min-w-[50vw] 2xl:min-h-[50vh]"
+						></div>
 						{ordered_projects_major.map((project) => {
 							return (
 								<Card
@@ -245,8 +254,17 @@ const Projects = () => {
 				<div className="flex justify-center p-4">
 					<div
 						className="flex flex-wrap justify-center gap-x-4 gap-y-8 w-4/5
-					2xl:justify-start self-center justify-self-center"
+						2xl:w-full items-end 2xl:justify-center self-center justify-self-center"
 					>
+						<div
+							id={
+								theme === "light"
+									? "mldssvg_light_projects"
+									: "mldssvg_light_projects"
+							}
+							className="p-4 m-4 hidden 2xl:flex
+                        2xl:w-full 2xl:h-full 2xl:min-w-[50vw] 2xl:min-h-[50vh]"
+						></div>
 						{ordered_projects_mlds.map((project) => {
 							return (
 								<Card
@@ -269,8 +287,17 @@ const Projects = () => {
 				<div className="flex justify-center p-4">
 					<div
 						className="flex flex-wrap justify-center gap-x-4 gap-y-8 w-4/5
-					2xl:justify-start self-center justify-self-center"
+						2xl:w-full items-end 2xl:justify-center self-center justify-self-center"
 					>
+						<div
+							id={
+								theme === "light"
+									? "devsvg_light_projects"
+									: "devsvg_light_projects"
+							}
+							className="p-4 m-4 hidden 2xl:flex
+                        2xl:w-full 2xl:h-full 2xl:min-w-[50vw] 2xl:min-h-[50vh]"
+						></div>
 						{ordered_projects_dev.map((project) => {
 							return (
 								<Card

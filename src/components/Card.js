@@ -21,13 +21,13 @@ const Card = (props) => {
 					</div>
 				)}
 				<div className="card-body">
-					<h2 className="card-title">
+					<div className="card-title text-2xl">
 						{props.title}
 						{props.new ? (
 							<div className="badge badge-secondary">NEW</div>
 						) : null}
-					</h2>
-					<p>{props.description}</p>
+					</div>
+					<p className="text-2xl">{props.description}</p>
 					<div className="card-actions justify-end">
 						{props.tags
 							? props.tags.map((tag) => {
