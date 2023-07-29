@@ -220,7 +220,7 @@ const Projects = () => {
 			>
 				<div className="flex justify-center p-4">
 					<div
-						className="flex flex-wrap justify-center gap-x-4 gap-y-8 w-4/5
+						className="flex flex-wrap justify-center gap-x-4 gap-y-8 xl:gap-12 w-4/5
 						2xl:w-full items-end 2xl:justify-center self-center justify-self-center"
 					>
 						<div

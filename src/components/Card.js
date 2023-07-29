@@ -6,17 +6,17 @@ const Card = (props) => {
 		<div>
 			<div
 				className="card w-96 bg-base-200 shadow-2xl hover:scale-105 duration-300 transform-gpu
-            hover:bg-base-300"
+            hover:bg-base-300 xl:w-[30rem] xl:h-96"
 				onClick={() => {
 					window.open(props.link, "_blank");
 				}}
 			>
 				{props.image ? (
-					<figure className="bg-cover bg-no-repeat max-w-md max-h-44 bg-top">
+					<figure className="bg-cover bg-no-repeat max-w-md max-h-44 xl:max-h-60 xl:max-w-full bg-top">
 						<img src={props.image} alt="Shoes" className="" />
 					</figure>
 				) : (
-					<div className="bg-secondary w-full h-44 justify-center flex items-center rounded-2xl">
+					<div className="bg-secondary w-full h-44 justify-center flex items-center rounded-2xl xl:h-60">
 						<IconCode className="w-24 h-24 text-primary-content" />
 					</div>
 				)}
