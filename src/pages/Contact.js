@@ -15,6 +15,7 @@ import {
 } from "@tabler/icons-react";
 import { ThemeContext } from "../context/ThemeContext";
 import { ArrowUpRightIcon, CheckBadgeIcon } from "@heroicons/react/24/solid";
+import "../css/Contact.css";
 
 const Contact = () => {
 	return (
@@ -23,8 +24,12 @@ const Contact = () => {
 				id="contact_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<IconDeviceMobileMessage stroke={1} className="w-24 h-24" />
-				<div className="text-center text-2xl p-4 m-4">
+				{/* <IconDeviceMobileMessage stroke={1} className="w-24 h-24" /> */}
+				<div
+					id="profile"
+					className="w-44 h-44 md:w-72 md:h-72 xl:w-96 xl:h-96"
+				></div>
+				<div className="text-center text-2xl p-4 m-4 md:text-3xl lg:text-4xl md:w-2/4">
 					You can contact me via my Email, Phone or any social Media.
 					I am always open to new opportunities and collaborations,
 					and always happy to help.
@@ -117,7 +122,10 @@ const Contact = () => {
 								);
 							}}
 						>
-							<IconBrandInstagram stroke={1} className="w-8 h-8" />
+							<IconBrandInstagram
+								stroke={1}
+								className="w-8 h-8"
+							/>
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -139,7 +147,10 @@ const Contact = () => {
 								);
 							}}
 						>
-							<IconBrandStackoverflow stroke={1} className="w-8 h-8" />
+							<IconBrandStackoverflow
+								stroke={1}
+								className="w-8 h-8"
+							/>
 						</button>
 					</div>
 				</div>

@@ -260,7 +260,7 @@ const Projects = () => {
 							id={
 								theme === "light"
 									? "mldssvg_light_projects"
-									: "mldssvg_light_projects"
+									: "mldssvg_dark_projects"
 							}
 							className="p-4 m-4 hidden 2xl:flex
                         2xl:w-full 2xl:h-full 2xl:min-w-[50vw] 2xl:min-h-[50vh]"
@@ -293,7 +293,7 @@ const Projects = () => {
 							id={
 								theme === "light"
 									? "devsvg_light_projects"
-									: "devsvg_light_projects"
+									: "devsvg_dark_projects"
 							}
 							className="p-4 m-4 hidden 2xl:flex
                         2xl:w-full 2xl:h-full 2xl:min-w-[50vw] 2xl:min-h-[50vh]"
