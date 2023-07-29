@@ -48,14 +48,11 @@ const Home = () => {
 							className="p-4 m-4 min-w-[50vw] min-h-[12vh]
                         md:w-full md:h-full md:min-w-[30vw] md:min-h-[30vh]"
 						></div>
-						<div>
-							<div
-								className="text-5xl text-center p-4
-                        "
-							>
-								Hi! I am Krishnaraj
+						<div className="flex flex-col justify-center items-center">
+							<div className="text-5xl text-center p-4 xl:text-6xl">
+								Hi! I am Krishnaraj!
 							</div>
-							<div className="text-3xl break-words p-4 text-center">
+							<div className="text-3xl break-words p-4 text-center xl:text-4xl xl:w-4/6">
 								An Aspiring{" "}
 								<span className="text-accent">
 									Data Scientist
@@ -78,7 +75,8 @@ const Home = () => {
 				</button>
 			</div>
 			<section></section>
-			<div class="wrapper pb-9">.
+			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"
@@ -89,10 +87,10 @@ const Home = () => {
 			</div>
 			<section
 				id="projects_section"
-				className="flex flex-col items-center justify-center mb-4 p-4"
+				className="flex flex-col items-center justify-center mb-4 p-4 "
 			>
 				<IconApiApp stroke={1} className="w-24 h-24" />
-				<div className="text-center text-2xl p-4 m-4">
+				<div className="text-center text-2xl p-4 m-4 lg:text-3xl xl:w-3/6 ">
 					I have worked on several Projects ever since I started
 					coding. They span across fields like
 					<span className="text-accent">
@@ -108,7 +106,8 @@ const Home = () => {
 					</button>
 				</NavLink>
 			</section>
-			<div class="wrapper pb-9">.
+			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"
@@ -122,7 +121,7 @@ const Home = () => {
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
 				<IconUserQuestion stroke={1} className="w-24 h-24" />
-				<div className="text-center text-2xl p-4 m-4 break-words">
+				<div className="text-center text-2xl p-4 m-4 break-words lg:text-3xl lg:w-4/6">
 					I am a 3rd Year Undergrad at MIT World Peace Univeristy in
 					Pune, pursuing my Bachelors in Computer Science, Majoring in
 					<span className="text-accent">
@@ -151,7 +150,8 @@ const Home = () => {
 					</button>
 				</NavLink>
 			</section>
-			<div class="wrapper pb-9">.
+			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"
@@ -165,7 +165,7 @@ const Home = () => {
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
 				<IconDeviceMobileMessage stroke={1} className="w-24 h-24" />
-				<div className="text-center text-2xl p-4 m-4">
+				<div className="text-center text-2xl p-4 m-4 lg:text-3xl xl:w-3/6 ">
 					You can contact me via my Email, Phone or any social Media.
 					I am always open to new opportunities and collaborations,
 					and always happy to help.
@@ -258,7 +258,10 @@ const Home = () => {
 								);
 							}}
 						>
-							<IconBrandInstagram stroke={1} className="w-8 h-8" />
+							<IconBrandInstagram
+								stroke={1}
+								className="w-8 h-8"
+							/>
 						</button>
 						<button
 							className="btn btn-neutral btn-circle btn-lg"
@@ -295,7 +298,8 @@ const Home = () => {
 				<br></br>
 				<br></br>
 			</section>
-			<div class="wrapper pb-9">.
+			<div class="wrapper pb-9">
+				.
 				<div
 					className={
 						theme === "light"

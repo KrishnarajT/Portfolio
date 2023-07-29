@@ -97,7 +97,7 @@ const About = () => {
 			>
 				<div className="text-5xl p-4 m-4 mb-0">Who I am</div>
 				<IconUserQuestion className="w-16 h-16" />
-				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
 					basic info and swot analysis in an accordian thats
 					collapsible. So that would be things im good at, things im
 					bad at, things im learning, and things im interested in.
@@ -108,27 +108,27 @@ const About = () => {
 					<div className="join join-vertical w-full mt-5">
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
 								<GlobeAsiaAustraliaIcon className="w-5 h-5" />
 								Where Am I from?{" "}
 							</div>
 							<div className="collapse-content">
-								<p className="text-lg">
+								<p className="text-lg md:text-2xl">
 									<ul className="list-inside list-disc">
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											Born in Jalna, Maharashtra, India
 										</li>
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											Spent Childhood in Mumbai, India
 										</li>
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											PreSchool in Dar Es Salaam, Tanzania
 										</li>
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											Middle and High School in Doha,
 											Qatar
 										</li>
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											In Pune, India Since College, 2020
 										</li>
 									</ul>
@@ -137,26 +137,26 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
 								<IconAxe className="w-5 h-5" />
 								My Hobbies{" "}
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconAxe className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconAxe className="w-5 h-5 md:w-20 md:h-10" />
 										Wood Working
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<CubeIcon className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<CubeIcon className="w-5 h-5 md:w-20 md:h-10" />
 										Cubing
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconChisel className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconChisel className="w-5 h-5 md:w-20 md:h-10" />
 										Carving
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconChessKnight className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
 										Chess
 									</div>
 								</div>
@@ -164,7 +164,7 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
 								<IconPresentation
 									className="w-5 h-5"
 									stroke={1.5}
@@ -173,28 +173,28 @@ const About = () => {
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconEmpathize className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconEmpathize className="w-5 h-5 md:w-20 md:h-10" />
 										Pursuation
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconUsersGroup className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconUsersGroup className="w-5 h-5 md:w-20 md:h-10" />
 										Public Speaking
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconChessKnight className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
 										Critical Thinking & Problem Solving
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconPresentation className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconPresentation className="w-5 h-5 md:w-20 md:h-10" />
 										Presentations
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconUsers className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconUsers className="w-5 h-5 md:w-20 md:h-10" />
 										Leadership
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconClearAll className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconClearAll className="w-5 h-5 md:w-20 md:h-10" />
 										Organizational
 									</div>
 								</div>
@@ -202,30 +202,30 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
 								<LanguageIcon className="w-5 h-5" />
 								Languages{" "}
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<UilLetterHindiA className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Gujarati
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<UilLetterHindiA className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Hindi
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<UilLetterHindiA className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Marathi
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconAlphabetLatin className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconAlphabetLatin className="w-5 h-5 md:w-20 md:h-10" />
 										English
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<EmojioneFlagForFrance className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<EmojioneFlagForFrance className="w-5 h-5 md:w-20 md:h-10" />
 										Basic Turkish and French
 									</div>
 								</div>
@@ -253,7 +253,7 @@ const About = () => {
 			>
 				<div className="text-5xl p-4 m-4 mb-0">What I do</div>
 				<IconChartDots stroke={1.5} className="w-16 h-16" />
-				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
 					this will have all the techincal things. a list of things
 					that i do, then a graph of languages i know, then the things
 					i am best at, what im learning and stuff in an accordian
@@ -261,27 +261,27 @@ const About = () => {
 					<div className="join join-vertical w-full mt-5">
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
 								<GlobeAsiaAustraliaIcon className="w-5 h-5" />
 								Primary Focus{" "}
 							</div>
 							<div className="collapse-content">
-								<p className="text-lg">
+								<p className="text-lg md:text-2xl">
 									<ul className="list-inside list-disc">
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											Born in Jalna, Maharashtra, India
 										</li>
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											Spent Childhood in Mumbai, India
 										</li>
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											PreSchool in Dar Es Salaam, Tanzania
 										</li>
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											Middle and High School in Doha,
 											Qatar
 										</li>
-										<li className="text-xl">
+										<li className="text-xl md:text-2xl">
 											In Pune, India Since College, 2020
 										</li>
 									</ul>
@@ -290,26 +290,26 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
 								<IconAxe className="w-5 h-5" />
 								Expertise{" "}
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconAxe className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconAxe className="w-5 h-5 md:w-20 md:h-10" />
 										Wood Working
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<CubeIcon className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<CubeIcon className="w-5 h-5 md:w-20 md:h-10" />
 										Cubing
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconChisel className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconChisel className="w-5 h-5 md:w-20 md:h-10" />
 										Carving
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconChessKnight className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
 										Chess
 									</div>
 								</div>
@@ -317,7 +317,7 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
 								<IconPresentation
 									className="w-5 h-5"
 									stroke={1.5}
@@ -326,28 +326,28 @@ const About = () => {
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconEmpathize className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconEmpathize className="w-5 h-5 md:w-20 md:h-10" />
 										Pursuation
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconUsersGroup className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconUsersGroup className="w-5 h-5 md:w-20 md:h-10" />
 										Public Speaking
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconChessKnight className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
 										Critical Thinking & Problem Solving
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconPresentation className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconPresentation className="w-5 h-5 md:w-20 md:h-10" />
 										Presentations
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconUsers className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconUsers className="w-5 h-5 md:w-20 md:h-10" />
 										Leadership
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconClearAll className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconClearAll className="w-5 h-5 md:w-20 md:h-10" />
 										Organizational
 									</div>
 									<div>
@@ -382,30 +382,30 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
 								<LanguageIcon className="w-5 h-5" />
 								Tools and Frameworks{" "}
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<UilLetterHindiA className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Gujarati
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<UilLetterHindiA className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Hindi
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<UilLetterHindiA className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Marathi
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<IconAlphabetLatin className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconAlphabetLatin className="w-5 h-5 md:w-20 md:h-10" />
 										English
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4">
-										<EmojioneFlagForFrance className="w-5 h-5" />
+									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<EmojioneFlagForFrance className="w-5 h-5 md:w-20 md:h-10" />
 										Basic Turkish and French
 									</div>
 								</div>
@@ -434,7 +434,7 @@ const About = () => {
 				<div className="text-5xl p-4 m-4 mb-0">Education</div>
 				<IconBooks stroke={1} className="w-16 h-16" />
 
-				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
 					<ul className="steps steps-vertical">
 						<li className="step step-primary">
 							<div className="flex flex-col text-left">
@@ -592,12 +592,12 @@ const About = () => {
 					Work Experience
 				</div>
 				<IconCode className="w-16 h-16" />
-				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
 					<ul className="steps steps-vertical">
-						<li className="step step-secondary">
+						<li className="step step-accent">
 							<div className="flex flex-col text-left">
 								<span
-									className="text-2xl text-secondary hover:text-accent cursor-pointer"
+									className="text-2xl text-accent hover:text-accent cursor-pointer"
 									onClick={() => {
 										window.open(
 											"https://www.mknspune.com/"
@@ -613,10 +613,10 @@ const About = () => {
 								<span className="text-xl">2011 - 2019</span>
 							</div>
 						</li>
-						<li className="step step-secondary mt-4">
+						<li className="step step-accent mt-4">
 							<div className="flex flex-col text-left">
 								<span
-									className="text-2xl text-secondary hover:text-accent cursor-pointer"
+									className="text-2xl text-accent hover:text-accent cursor-pointer"
 									onClick={() => {
 										window.open(
 											"https://www.mitwpu.edu.in/"
@@ -657,7 +657,7 @@ const About = () => {
 					Certifications and Achievements
 				</div>
 				<AcademicCapIcon className="w-16 h-16 mt-0" />
-				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words">
+				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
 					<ul className="list-disc">
 						<li className="text-xl bg-base-200 p-4 rounded-xl my-2">
 							<div
@@ -746,7 +746,7 @@ const About = () => {
 					Interested in Hiring?{" "}
 				</div>
 				{/* <IconUserQuestion className="w-16 h-16" /> */}
-				<div className="text-center text-2xl md:text-4xl break-words"></div>
+				<div className="text-center text-2xl md:text-4xl break-words xl:w-4/6"></div>
 				<NavLink to={"/projects"} className="m-4 mt-10">
 					<button className="btn btn-secondary btn-lg ">
 						Look at my projects{" "}
