@@ -12,21 +12,25 @@ import Card from "../components/Card";
 import {
 	ordered_projects_major,
 	ordered_projects_mlds,
-	ordered_projects_dev,
+	ordered_projects_app,
+	ordered_projects_web,
+	ordered_projects_game,
 } from "../components/ProjectCardsData";
+import ProjectSection from "../components/ProjectSection";
+
 const Projects = () => {
 	const { theme, setTheme } = React.useContext(ThemeContext);
 	return (
 		<div className="App Fade -z-40 p-4">
 			<div
-				className="h-[70vh] p-6 pb-0 pt-0 flex flex-col justify-start items-center
+				className="min-h-[70vh] p-6 pb-0 pt-0 flex flex-col justify-start items-center
             sm:justify-evenly"
 				id="mainbgdark_projects"
 			>
-				<div className="flex justify-center">
+				<div className="flex justify-center min-h-fit">
 					<div
 						className="flex flex-col items-center
-                lg:justify-between lg:flex-row-reverse"
+                lg:justify-between lg:flex-row-reverse min-h-fit"
 					>
 						<div
 							id={
@@ -37,7 +41,7 @@ const Projects = () => {
 							className="p-4 m-4 min-w-[80vw] min-h-[25vh]
                         lg:w-full lg:h-full lg:min-w-[50vw] lg:min-h-[50vh]"
 						></div>
-						<div>
+						<div className="max-h-fit">
 							<div
 								className="text-5xl text-center p-4
 								md:text-7xl
@@ -85,12 +89,19 @@ const Projects = () => {
 			</div>
 			<div className="flex flex-col items-center justify-center">
 				<div
-					className="tabs tabs-boxed tabs-lg m-4 p-2 transform-gpu duration-200"
+					className="tabs tabs-boxed tabs-lg m-4 p-2 transform-gpu duration-200 text-center snap-center flex justify-center flex-wrap"
 					id="thetabs"
 				>
 					<div
 						className="text-xl tab tab-active"
 						onClick={(e) => {
+							// scroll to the element
+							const current_tab_section =
+								document.getElementById("major_projects");
+							current_tab_section.scrollIntoView({
+								behavior: "smooth",
+							});
+
 							// make this tab active
 							document
 								.getElementById("thetabs")
@@ -101,20 +112,25 @@ const Projects = () => {
 							document
 								.getElementById("thetabs")
 								.children[2].classList.remove("tab-active");
-
-							// scroll to the element
-							const current_tab_section =
-								document.getElementById("major_projects");
-							current_tab_section.scrollIntoView({
-								behavior: "smooth",
-							});
+							document
+								.getElementById("thetabs")
+								.children[3].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[4].classList.remove("tab-active");
 
 							// hide the others
 							document
 								.getElementById("mlds_projects")
 								.classList.add("hidden");
 							document
-								.getElementById("app_web_dev_projects")
+								.getElementById("app_dev_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("web_dev_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("game_dev_projects")
 								.classList.add("hidden");
 
 							// show the current one
@@ -139,6 +155,12 @@ const Projects = () => {
 							document
 								.getElementById("thetabs")
 								.children[2].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[3].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[4].classList.remove("tab-active");
 
 							// scroll to the element
 							const current_tab_section =
@@ -152,7 +174,13 @@ const Projects = () => {
 								.getElementById("major_projects")
 								.classList.add("hidden");
 							document
-								.getElementById("app_web_dev_projects")
+								.getElementById("app_dev_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("web_dev_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("game_dev_projects")
 								.classList.add("hidden");
 
 							// show the current one
@@ -176,11 +204,16 @@ const Projects = () => {
 							document
 								.getElementById("thetabs")
 								.children[0].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[3].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[4].classList.remove("tab-active");
 
 							// scroll to the element
-							const current_tab_section = document.getElementById(
-								"app_web_dev_projects"
-							);
+							const current_tab_section =
+								document.getElementById("app_dev_projects");
 							current_tab_section.scrollIntoView({
 								behavior: "smooth",
 							});
@@ -192,14 +225,118 @@ const Projects = () => {
 							document
 								.getElementById("major_projects")
 								.classList.add("hidden");
+							document
+								.getElementById("web_dev_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("game_dev_projects")
+								.classList.add("hidden");
 
 							// show the current one
 							document
-								.getElementById("app_web_dev_projects")
+								.getElementById("app_dev_projects")
 								.classList.remove("hidden");
 						}}
 					>
-						App & Web Dev
+						App Dev
+					</div>
+					<div
+						className="text-xl tab"
+						onClick={(e) => {
+							// make this tab active
+							document
+								.getElementById("thetabs")
+								.children[3].classList.add("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[1].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[0].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[2].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[4].classList.remove("tab-active");
+
+							// scroll to the element
+							const current_tab_section =
+								document.getElementById("web_dev_projects");
+							current_tab_section.scrollIntoView({
+								behavior: "smooth",
+							});
+
+							// hide the others
+							document
+								.getElementById("mlds_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("major_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("app_dev_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("game_dev_projects")
+								.classList.add("hidden");
+
+							// show the current one
+							document
+								.getElementById("web_dev_projects")
+								.classList.remove("hidden");
+						}}
+					>
+						Web Dev
+					</div>
+					<div
+						className="text-xl tab"
+						onClick={(e) => {
+							// make this tab active
+							document
+								.getElementById("thetabs")
+								.children[4].classList.add("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[3].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[1].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[0].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[2].classList.remove("tab-active");
+
+							// scroll to the element
+							const current_tab_section =
+								document.getElementById("game_dev_projects");
+							current_tab_section.scrollIntoView({
+								behavior: "smooth",
+							});
+
+							// hide the others
+							document
+								.getElementById("mlds_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("major_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("app_dev_projects")
+								.classList.add("hidden");
+							document
+								.getElementById("web_dev_projects")
+								.classList.add("hidden");
+
+							// show the current one
+							document
+								.getElementById("game_dev_projects")
+								.classList.remove("hidden");
+						}}
+					>
+						Game Dev
 					</div>
 				</div>
 			</div>
@@ -213,106 +350,37 @@ const Projects = () => {
 			</div>
 
 			{/* sections */}
+			<div id="major_projects" className="">
+				<ProjectSection
+					ordered_projects={ordered_projects_major}
+					svg_name={"majorssvg"}
+				/>
+			</div>
+			<div id="mlds_projects" className="hidden">
+				<ProjectSection
+					ordered_projects={ordered_projects_mlds}
+					svg_name={"mldssvg"}
+				/>
+			</div>
+			<div id="app_dev_projects" className="hidden">
+				<ProjectSection
+					ordered_projects={ordered_projects_app}
+					svg_name={"devsvg"}
+				/>
+			</div>
+			<div id="web_dev_projects" className="hidden">
+				<ProjectSection
+					ordered_projects={ordered_projects_web}
+					svg_name={"devsvg"}
+				/>
+			</div>
+			<div id="game_dev_projects" className="hidden">
+				<ProjectSection
+					ordered_projects={ordered_projects_game}
+					svg_name={"devsvg"}
+				/>
+			</div>
 
-			<section
-				id="major_projects"
-				className=" p-2 m-2 mb-20 text-xl text-base-content"
-			>
-				<div className="flex justify-center p-4">
-					<div
-						className="flex flex-wrap justify-center gap-x-4 gap-y-8 xl:gap-12 w-4/5
-						2xl:w-full items-end 2xl:justify-center self-center justify-self-center"
-					>
-						<div
-							id={
-								theme === "light"
-									? "majorssvg_light_projects"
-									: "majorssvg_dark_projects"
-							}
-							className="p-4 m-4 hidden 2xl:flex
-                        2xl:w-full 2xl:h-full 2xl:min-w-[50vw] 2xl:min-h-[50vh]"
-						></div>
-						{ordered_projects_major.map((project) => {
-							return (
-								<Card
-									title={project.title}
-									description={project.description}
-									image={project.image}
-									link={project.link}
-									tags={project.tags}
-									new={project.new}
-								/>
-							);
-						})}
-					</div>
-				</div>
-			</section>
-			<section
-				id="mlds_projects"
-				className="hidden p-2 m-2 mb-20 text-xl text-base-content"
-			>
-				<div className="flex justify-center p-4">
-					<div
-						className="flex flex-wrap justify-center gap-x-4 gap-y-8 w-4/5
-						2xl:w-full items-end 2xl:justify-center self-center justify-self-center"
-					>
-						<div
-							id={
-								theme === "light"
-									? "mldssvg_light_projects"
-									: "mldssvg_dark_projects"
-							}
-							className="p-4 m-4 hidden 2xl:flex
-                        2xl:w-full 2xl:h-full 2xl:min-w-[50vw] 2xl:min-h-[50vh]"
-						></div>
-						{ordered_projects_mlds.map((project) => {
-							return (
-								<Card
-									title={project.title}
-									description={project.description}
-									image={project.image}
-									link={project.link}
-									tags={project.tags}
-									new={project.new}
-								/>
-							);
-						})}
-					</div>
-				</div>
-			</section>
-			<section
-				id="app_web_dev_projects"
-				className="hidden p-2 m-2 mb-20 text-xl text-base-content"
-			>
-				<div className="flex justify-center p-4">
-					<div
-						className="flex flex-wrap justify-center gap-x-4 gap-y-8 w-4/5
-						2xl:w-full items-end 2xl:justify-center self-center justify-self-center"
-					>
-						<div
-							id={
-								theme === "light"
-									? "devsvg_light_projects"
-									: "devsvg_dark_projects"
-							}
-							className="p-4 m-4 hidden 2xl:flex
-                        2xl:w-full 2xl:h-full 2xl:min-w-[50vw] 2xl:min-h-[50vh]"
-						></div>
-						{ordered_projects_dev.map((project) => {
-							return (
-								<Card
-									title={project.title}
-									description={project.description}
-									image={project.image}
-									link={project.link}
-									tags={project.tags}
-									new={project.new}
-								/>
-							);
-						})}
-					</div>
-				</div>
-			</section>
 			<div class="wrapper pb-9 m.t-16">
 				<div
 					className={
