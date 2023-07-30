@@ -1,18 +1,13 @@
-const projects_major = [];
-
-// now reorder the list based on new projects_major:
-const new_projects_major = projects_major.filter(
-	(project) => project.new === true
-);
-const old_projects_major = projects_major.filter(
-	(project) => project.new === false
-);
-export const ordered_projects_major = [
-	...new_projects_major,
-	...old_projects_major,
-];
-
-const projects_mlds = [
+const projects_major = [
+	{
+		title: "Poco Loco",
+		description:
+			"Music Player Made with Vanilla JS. Themed on the Movie Coco.",
+		image: "https://github.com/KrishnarajT/Poco-Loco/raw/main/doc/Screenshots/login.png",
+		link: "https://github.com/KrishnarajT/Poco-Loco",
+		tags: ["Js", "Website"],
+		new: true,
+	},
 	{
 		title: "Thoda Upar Thoda Neeche",
 		description:
@@ -32,12 +27,11 @@ const projects_mlds = [
 		new: true,
 	},
 	{
-		title: "Poco Loco",
-		description:
-			"Music Player Made with Vanilla JS. Themed on the Movie Coco.",
-		image: "https://github.com/KrishnarajT/Poco-Loco/raw/main/doc/Screenshots/login.png",
-		link: "https://github.com/KrishnarajT/Poco-Loco",
-		tags: ["Js", "Website"],
+		title: "How Much",
+		description: "Simple Guessing Game made to learn React Native.",
+		image: "https://github.com/KrishnarajT/How-Much/raw/main/design/Screenshots/Game%20Play.gif",
+		link: "https://github.com/KrishnarajT/How-Much",
+		tags: ["Game"],
 		new: true,
 	},
 	{
@@ -55,6 +49,66 @@ const projects_mlds = [
 			"Shows visually the way all the top 10 sorting algorithms work, by allowing you to choose from a variety of ranges",
 		image: "https://github.com/KrishnarajT/Visually-Sorting-Arrays/raw/master/Screenshots/quick.png",
 		link: "https://github.com/KrishnarajT/Tippy",
+		tags: ["Desktop"],
+		new: false,
+	},
+	{
+		title: "Puzzlelists",
+		description:
+			"An Arcade which has many small Puzzle kinda games in it. Also the Python Project for Second Year",
+		image: "https://github.com/KrishnarajT/PuzzleLists/raw/main/documentation/screenshots/welcome_screen.png",
+		link: "https://github.com/KrishnarajT/Car-Game",
+		tags: ["Game", "App", "Python"],
+		new: true,
+	},
+	{
+		title: "The Hangman project in C++",
+		description:
+			"The classic usual hangman Game, in C++, with graphics and a Marvel and John Wick theme.",
+		image: "https://github.com/KrishnarajT/The-Hangman-Project/raw/master/Screenshots/HangMan_praiyHWOTy.png",
+		link: "https://github.com/KrishnarajT/The-Hangman-Project",
+		tags: ["Game"],
+		new: false,
+	},
+];
+
+// now reorder the list based on new projects_major:
+const new_projects_major = projects_major.filter(
+	(project) => project.new === true
+);
+const old_projects_major = projects_major.filter(
+	(project) => project.new === false
+);
+export const ordered_projects_major = [
+	...new_projects_major,
+	...old_projects_major,
+];
+
+const projects_mlds = [
+	{
+		title: "Chit Chat Charts",
+		description:
+			"A Pyqt app made for visualizing and analyzing Chat data and texts between you and your friends.",
+		image: "https://github.com/KrishnarajT/Chit-Chat-Charts/raw/main/Example/Graphs/krishnaraj%20with%20friend%20Top%2020%20Words.jpg",
+		link: "https://github.com/KrishnarajT/Chit-Chat-Charts",
+		tags: ["Data Analysis"],
+		new: true,
+	},
+	{
+		title: "Currency Converter",
+		description:
+			"A simple PyQt GUI for Converting Currencies, Graphically Viewing Historical Data and Plotting the last week's Rates.",
+		image: "https://github.com/KrishnarajT/Currency-Converter/raw/main/Screenshots/Currency_converter_ss%203.png",
+		link: "https://github.com/KrishnarajT/Currency-Converter",
+		tags: ["Desktop"],
+		new: false,
+	},
+	{
+		title: "Vegapod GUI",
+		description:
+			"Realtime GUI for Monitoring vitals of a Hyperloop Pod made with Python and PyQt5, for MITWPU Vegapod Team.",
+		image: "https://raw.githubusercontent.com/KrishnarajT/Vegapod-New-GUI/main/Screenshots/graph.png?token=GHSAT0AAAAAACCHOZZGPQ76EM62U3ZRD4V4ZGG52HA",
+		link: "https://github.com/KrishnarajT/Vegapod-New-GUI",
 		tags: ["Desktop"],
 		new: false,
 	},
@@ -146,10 +200,10 @@ const projects_app = [
 		new: false,
 	},
 	{
-		title: "Visually Sorting Arrays",
+		title: "Vegapod GUI",
 		description:
 			"Realtime GUI for Monitoring vitals of a Hyperloop Pod made with Python and PyQt5, for MITWPU Vegapod Team.",
-		image: "https://github.com/KrishnarajT/Vegapod-New-GUI/raw/main/Screenshots/graph.png",
+		image: "https://raw.githubusercontent.com/KrishnarajT/Vegapod-New-GUI/main/Screenshots/graph.png?token=GHSAT0AAAAAACCHOZZGPQ76EM62U3ZRD4V4ZGG52HA",
 		link: "https://github.com/KrishnarajT/Vegapod-New-GUI",
 		tags: ["Desktop"],
 		new: false,
@@ -190,22 +244,14 @@ export const ordered_projects_app = [...new_projects_app, ...old_projects_app];
 
 const projects_web = [
 	{
-		title: "CP from Here",
-		description:
-			"A simple website to host a file that would contain anything that I want to share with my friends or anyone anywhere.",
-		// image: "https://source.unsplash.com/random",
-		link: "https://github.com/KrishnarajT/Copy-from-here",
-		tags: ["Project"],
-		new: false,
-	},
-	{
 		title: "Portfolio Page",
 		description: "That would be this website!",
-		image: "",
+		image: "https://github.com/KrishnarajT/Portfolio/blob/main/src/assets/img/screenshot.png?raw=true",
 		link: "https://github.com/KrishnarajT/Portfolio",
 		tags: ["Project"],
-		new: false,
+		new: true,
 	},
+
 	{
 		title: "Password Generator",
 		description:
@@ -240,6 +286,40 @@ const projects_web = [
 		image: "https://github.com/KrishnarajT/Quotepaper-Generator/raw/main/images/quotes1.png",
 		link: "https://github.com/KrishnarajT/Quotepaper-Generator",
 		tags: ["Js", "Website"],
+		new: false,
+	},
+	{
+		title: "CP from Here",
+		description:
+			"A simple website to host a file that would contain anything that I want to share with my friends or anyone anywhere.",
+		// image: "https://source.unsplash.com/random",
+		link: "https://github.com/KrishnarajT/Copy-from-here",
+		tags: ["Project"],
+		new: false,
+	},
+	{
+		title: "Game of Memories",
+		description: "A simple Memory Game themed on Game of Thrones",
+		image: "https://github.com/KrishnarajT/Game-of-Memories/raw/main/game-of-memories.gif",
+		link: "https://github.com/KrishnarajT/Game-of-Memories",
+		tags: ["Game", "Website"],
+		new: false,
+	},
+	{
+		title: "Snap A Mole",
+		description:
+			"Yet another Simple Website, the classic Wack a Mole game, in Avengers Style",
+		image: "https://github.com/KrishnarajT/Snap-A-Mole/raw/main/screenshots.gif",
+		link: "https://github.com/KrishnarajT/Snap-A-Mole",
+		tags: ["Game", "Website"],
+		new: false,
+	},
+	{
+		title: "Brick Breaker",
+		description: "The classic Brick Breaker Game, in HTML, CSS and Js",
+		image: "https://github.com/KrishnarajT/Brick-Breaker/raw/main/screenshots.gif",
+		link: "https://github.com/KrishnarajT/Brick-Breaker",
+		tags: ["Game"],
 		new: false,
 	},
 ];
