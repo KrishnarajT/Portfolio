@@ -1,15 +1,21 @@
 import React from "react";
 import {
-	IconAlphabetCyrillic,
 	IconAlphabetLatin,
 	IconAxe,
 	IconBooks,
+	IconBrain,
+	IconBrandGithub,
+	IconBrandPython,
+	IconBrandReact,
+	IconBrandVsco,
+	IconBrandVscode,
 	IconChartDots,
-	IconChartHistogram,
 	IconChessKnight,
 	IconChisel,
 	IconClearAll,
 	IconCode,
+	IconDeviceDesktop,
+	IconDeviceDesktopBolt,
 	IconEmpathize,
 	IconPresentation,
 	IconUserQuestion,
@@ -24,15 +30,25 @@ import {
 	GlobeAsiaAustraliaIcon,
 	LanguageIcon,
 } from "@heroicons/react/24/solid";
-import { ArrowDownIcon } from "@heroicons/react/24/solid";
 import { ThemeContext } from "../context/ThemeContext";
 import ScrollButton from "../components/Scrollbutton";
 import "../css/About.css";
 import UilLetterHindiA from "../components/UilLetterHindiA";
-import { EmojioneFlagForFrance } from "../components/EmojioneFlagForFrance";
+import {
+	EmojioneFlagForFrance,
+	EmojioneFlagForTurkey,
+	SimpleIconsQt,
+	BiWindows,
+	MdiGamepadCircleRight,
+	LogosArchlinux,
+	FileIconsLatex,
+	MdiMicrosoftOffice,
+	SkillIconsJavaLight,
+	MdiTailwind,
+} from "../components/EmojioneFlagForFrance";
 
 const About = () => {
-	const { theme, setTheme } = React.useContext(ThemeContext);
+	const { theme } = React.useContext(ThemeContext);
 
 	return (
 		<div className="App Fade">
@@ -98,17 +114,15 @@ const About = () => {
 				<div className="text-5xl p-4 m-4 mb-0">Who I am</div>
 				<IconUserQuestion className="w-16 h-16" />
 				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
-					basic info and swot analysis in an accordian thats
-					collapsible. So that would be things im good at, things im
-					bad at, things im learning, and things im interested in.
-					qualities, hobbies, etc. Also write characteristics and
-					qualities and soft skills and stuff. dont just list things
-					use buttons or some fancy thing with icons if its something
-					listable.
+					I am presently a Student at MITWPU, Pune. I would like to
+					become a Data Scientist in hopes of following my love for
+					Mathematics and Statistics. I am also a Full Stack
+					Developer, and I have worked on several projects in the
+					past.
 					<div className="join join-vertical w-full mt-5">
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
 								<GlobeAsiaAustraliaIcon className="w-5 h-5" />
 								Where Am I from?{" "}
 							</div>
@@ -137,25 +151,25 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
 								<IconAxe className="w-5 h-5" />
 								My Hobbies{" "}
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconAxe className="w-5 h-5 md:w-20 md:h-10" />
 										Wood Working
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<CubeIcon className="w-5 h-5 md:w-20 md:h-10" />
 										Cubing
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconChisel className="w-5 h-5 md:w-20 md:h-10" />
 										Carving
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
 										Chess
 									</div>
@@ -164,7 +178,7 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
 								<IconPresentation
 									className="w-5 h-5"
 									stroke={1.5}
@@ -173,27 +187,39 @@ const About = () => {
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconEmpathize className="w-5 h-5 md:w-20 md:h-10" />
 										Pursuation
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconUsersGroup className="w-5 h-5 md:w-20 md:h-10" />
 										Public Speaking
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
-										Critical Thinking & Problem Solving
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconBrain className="w-5 h-5 md:w-20 md:h-10" />
+										Critical Thinking
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
+										Problem Solving
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconEmpathize className="w-5 h-5 md:w-20 md:h-10" />
+										Empathy
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
+										Approachability
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconPresentation className="w-5 h-5 md:w-20 md:h-10" />
 										Presentations
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconUsers className="w-5 h-5 md:w-20 md:h-10" />
 										Leadership
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconClearAll className="w-5 h-5 md:w-20 md:h-10" />
 										Organizational
 									</div>
@@ -202,31 +228,35 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
 								<LanguageIcon className="w-5 h-5" />
 								Languages{" "}
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Gujarati
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Hindi
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
 										Marathi
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconAlphabetLatin className="w-5 h-5 md:w-20 md:h-10" />
 										English
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<EmojioneFlagForFrance className="w-5 h-5 md:w-20 md:h-10" />
-										Basic Turkish and French
+										French Level 1
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<EmojioneFlagForTurkey className="w-5 h-5 md:w-20 md:h-10" />
+										Turkish Level 2
 									</div>
 								</div>
 							</div>
@@ -254,14 +284,17 @@ const About = () => {
 				<div className="text-5xl p-4 m-4 mb-0">What I do</div>
 				<IconChartDots stroke={1.5} className="w-16 h-16" />
 				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
-					this will have all the techincal things. a list of things
-					that i do, then a graph of languages i know, then the things
-					i am best at, what im learning and stuff in an accordian
-					again collapsible.{" "}
+					I have a passion for learning to code, and building creating
+					things that can help people. Due to that most of my focus in
+					the beginning was on making Apps and Games. Since then I
+					have started focusing more on Data Science and Statistics
+					due my love for Charts, and just analysing data in general.
+					It has been an immensely rewarding experience, and I am
+					looking forward to learning more about it.
 					<div className="join join-vertical w-full mt-5">
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
 								<GlobeAsiaAustraliaIcon className="w-5 h-5" />
 								Primary Focus{" "}
 							</div>
@@ -269,20 +302,22 @@ const About = () => {
 								<p className="text-lg md:text-2xl">
 									<ul className="list-inside list-disc">
 										<li className="text-xl md:text-2xl">
-											Born in Jalna, Maharashtra, India
+											Data Science, Machine Learning and
+											Data Analysis
 										</li>
 										<li className="text-xl md:text-2xl">
-											Spent Childhood in Mumbai, India
+											Managing Big Data, Visualizing Data
+											and Presenting it well
 										</li>
 										<li className="text-xl md:text-2xl">
-											PreSchool in Dar Es Salaam, Tanzania
+											Managing and Creating large
+											Databases.
 										</li>
 										<li className="text-xl md:text-2xl">
-											Middle and High School in Doha,
-											Qatar
-										</li>
-										<li className="text-xl md:text-2xl">
-											In Pune, India Since College, 2020
+											Secondary focus on anything
+											creative, be it Software
+											Development, Game Development, or
+											Web Development.
 										</li>
 									</ul>
 								</p>
@@ -290,34 +325,43 @@ const About = () => {
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
 								<IconAxe className="w-5 h-5" />
 								Expertise{" "}
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconAxe className="w-5 h-5 md:w-20 md:h-10" />
-										Wood Working
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconPresentation className="w-5 h-5 md:w-20 md:h-10" />
+										Powerpoint Presentations
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<CubeIcon className="w-5 h-5 md:w-20 md:h-10" />
-										Cubing
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<SimpleIconsQt className="w-5 h-5 md:w-20 md:h-10" />
+										PyQT and Tkinter
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconChisel className="w-5 h-5 md:w-20 md:h-10" />
-										Carving
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconDeviceDesktopBolt className="w-5 h-5 md:w-20 md:h-10" />
+										GUI Development for anything
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
-										Chess
+
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<FileIconsLatex className="w-5 h-5 md:w-20 md:h-10" />
+										LATEX
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<LogosArchlinux className="w-5 h-5 md:w-20 md:h-10" />
+										Arch Linux, Other Distros
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<BiWindows className="w-5 h-5 md:w-20 md:h-10" />
+										Windows and OS Management
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
 								<IconPresentation
 									className="w-5 h-5"
 									stroke={1.5}
@@ -326,87 +370,115 @@ const About = () => {
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconEmpathize className="w-5 h-5 md:w-20 md:h-10" />
-										Pursuation
-									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconUsersGroup className="w-5 h-5 md:w-20 md:h-10" />
-										Public Speaking
-									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
-										Critical Thinking & Problem Solving
-									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconPresentation className="w-5 h-5 md:w-20 md:h-10" />
-										Presentations
-									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconUsers className="w-5 h-5 md:w-20 md:h-10" />
-										Leadership
-									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconClearAll className="w-5 h-5 md:w-20 md:h-10" />
-										Organizational
-									</div>
-									<div>
-										<progress
-											className="progress progress-primary w-56"
-											value={0}
-											max="100"
-										></progress>
-										<progress
-											className="progress progress-primary w-56"
-											value="10"
-											max="100"
-										></progress>
-										<progress
-											className="progress progress-primary w-56"
-											value="40"
-											max="100"
-										></progress>
-										<progress
-											className="progress progress-primary w-56"
-											value="70"
-											max="100"
-										></progress>
-										<progress
-											className="progress progress-primary w-56"
-											value="100"
-											max="100"
-										></progress>
+									<div className="flex flex-col justify-center items-center align-middle w-full text-2xl">
+										<div className="flex gap-4 items-center justify-between w-96 p-1">
+											<div>Python</div>
+											<progress
+												className="progress progress-primary w-56 h-6"
+												value={93}
+												max="100"
+											></progress>
+										</div>
+
+										<div className="flex gap-4 items-center justify-between w-96 p-1">
+											<div>C / C++</div>
+											<progress
+												className="progress progress-primary w-56 h-6"
+												value={80}
+												max="100"
+											></progress>
+										</div>
+
+										<div className="flex gap-4 items-center justify-between w-96 p-1">
+											<div>Java</div>
+											<progress
+												className="progress progress-primary w-56 h-6"
+												value={70}
+												max="100"
+											></progress>
+										</div>
+
+										<div className="flex gap-4 items-center justify-between w-96 p-1">
+											<div>HTML CSS</div>
+											<progress
+												className="progress progress-primary w-56 h-6"
+												value={80}
+												max="100"
+											></progress>
+										</div>
+
+										<div className="flex gap-4 items-center justify-between w-96 p-1">
+											<div>Javascript</div>
+											<progress
+												className="progress progress-primary w-56 h-6"
+												value={70}
+												max="100"
+											></progress>
+										</div>
+
+										<div className="flex gap-4 items-center justify-between w-96 p-1">
+											<div>SQL</div>
+											<progress
+												className="progress progress-primary w-56 h-6"
+												value={85}
+												max="100"
+											></progress>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
-							<div className="collapse-title md:text-3xl text-xl font-medium flex gap-3 items-center">
+							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
 								<LanguageIcon className="w-5 h-5" />
 								Tools and Frameworks{" "}
 							</div>
 							<div className="collapse-content">
 								<div className="text-lg flex flex-wrap gap-2">
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<SimpleIconsQt className="w-5 h-5 md:w-20 md:h-10" />
+										PyQT and Tkinter
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<SkillIconsJavaLight className="w-5 h-5 md:w-20 md:h-10" />
+										Java Swing and AWT
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
-										Gujarati
+										SFML
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
-										Hindi
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<MdiMicrosoftOffice className="w-5 h-5 md:w-20 md:h-10" />
+										MS Office, Google Docs
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
-										Marathi
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconBrandVscode className="w-5 h-5 md:w-20 md:h-10" />
+										All Code Editors.
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconAlphabetLatin className="w-5 h-5 md:w-20 md:h-10" />
-										English
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconBrandPython className="w-5 h-5 md:w-20 md:h-10" />
+										Matplotlib, Numpy, Pandas
 									</div>
-									<div className="badge badge-neutral badge-lg flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<EmojioneFlagForFrance className="w-5 h-5 md:w-20 md:h-10" />
-										Basic Turkish and French
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconBrandReact className="w-5 h-5 md:w-20 md:h-10" />
+										React Native and React
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<MdiTailwind className="w-5 h-5 md:w-20 md:h-10" />
+										Tailwind CSS, Bootstrap, Material UI
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconBrandPython className="w-5 h-5 md:w-20 md:h-10" />
+										Pygame
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<FileIconsLatex className="w-5 h-5 md:w-20 md:h-10" />
+										LATEX
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconBrandGithub className="w-5 h-5 md:w-20 md:h-10" />
+										Git and Github
 									</div>
 								</div>
 							</div>
@@ -658,8 +730,8 @@ const About = () => {
 				</div>
 				<AcademicCapIcon className="w-16 h-16 mt-0" />
 				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
-					<ul className="list-disc">
-						<li className="text-xl bg-base-200 p-4 rounded-xl my-2">
+					<ul className="flex justify-center flex-col items-center">
+						<li className="text-xl bg-base-200 p-4 rounded-xl my-2 w-fit lg:px-32">
 							<div
 								className={`text-2xl ${
 									theme === "light"
@@ -675,12 +747,12 @@ const About = () => {
 								>
 									Deep Learning Specialization
 								</a>{" "}
-								<div className="text-left p-3 text-base-content">
+								<div className="text-center p-3 text-base-content">
 									By deeplearning.ai on Coursera
 								</div>
 							</div>
 						</li>
-						<li className="text-xl bg-base-200 p-4 rounded-xl my-2">
+						<li className="text-xl bg-base-200 p-4 rounded-xl my-2 w-fit lg:px-32">
 							<div
 								className={`text-2xl ${
 									theme === "light"
@@ -696,12 +768,12 @@ const About = () => {
 								>
 									Deep Learning Specialization
 								</a>{" "}
-								<div className="text-left p-3 text-base-content">
+								<div className="text-center p-3 text-base-content">
 									By deeplearning.ai on Coursera
 								</div>
 							</div>
 						</li>
-						<li className="text-xl bg-base-200 p-4 rounded-xl my-2">
+						<li className="text-xl bg-base-200 p-4 rounded-xl my-2 w-fit lg:px-32">
 							<div
 								className={`text-2xl ${
 									theme === "light"
@@ -717,7 +789,7 @@ const About = () => {
 								>
 									Deep Learning Specialization
 								</a>{" "}
-								<div className="text-left p-3 text-base-content">
+								<div className="text-center p-3 text-base-content">
 									By deeplearning.ai on Coursera
 								</div>
 							</div>
