@@ -618,14 +618,14 @@ const About = () => {
                 <span
                   className="text-2xl text-accent hover:text-accent cursor-pointer"
                   onClick={() => {
-                    window.open("https://www.mknspune.com/");
+                    window.open("https://www.emc2edu.in/");
                   }}
                 >
-                  Mansukhbhai Kothari Public School
+                  EMC2 Classes
                 </span>
+                <span className="text-xl">Teacher - IC and CS for 11th and 12th</span>
                 <span className="text-xl">Pune, India</span>
-                <span className="text-xl">CBSE 12th Science - 96.4%</span>
-                <span className="text-xl">2011 - 2019</span>
+                <span className="text-xl">2022</span>
               </div>
             </li>
             <li className="step step-accent mt-4">
@@ -633,16 +633,18 @@ const About = () => {
                 <span
                   className="text-2xl text-accent hover:text-accent cursor-pointer"
                   onClick={() => {
-                    window.open("https://www.mitwpu.edu.in/");
+                    window.open(
+						"https://www.linkedin.com/company/team-vegapod?originalSubdomain=in"
+					);
                   }}
                 >
-                  Dr. Vishwanath Karads MIT World Peace University
+                  Team Vegapod from MITWPU
                 </span>
                 <span className="text-xl">
-                  B.Tech in CSE in Cyber Security & Forensics
+                  Freelanced to make the GUI for their Pod
                 </span>
                 <span className="text-xl">Pune, India</span>
-                <span className="text-xl">2021 - 2025</span>
+                <span className="text-xl">2022</span>
               </div>
             </li>
           </ul>
@@ -678,54 +680,16 @@ const About = () => {
                 } flex flex-col justify-center`}
               >
                 <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/7Q4ZQZQZQZQZ"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-accent"
                 >
-                  Deep Learning Specialization
+                  None worth Mentioning yet. 
                 </a>{" "}
-                <div className="text-center p-3 text-base-content">
+                {/* <div className="text-center p-3 text-base-content">
                   By deeplearning.ai on Coursera
-                </div>
-              </div>
-            </li>
-            <li className="text-xl bg-base-200 p-4 rounded-xl my-2 w-fit lg:px-32">
-              <div
-                className={`text-2xl ${
-                  theme === "light" ? "text-neutral" : "text-primary"
-                } flex flex-col justify-center`}
-              >
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/7Q4ZQZQZQZQZ"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-accent"
-                >
-                  Deep Learning Specialization
-                </a>{" "}
-                <div className="text-center p-3 text-base-content">
-                  By deeplearning.ai on Coursera
-                </div>
-              </div>
-            </li>
-            <li className="text-xl bg-base-200 p-4 rounded-xl my-2 w-fit lg:px-32">
-              <div
-                className={`text-2xl ${
-                  theme === "light" ? "text-neutral" : "text-primary"
-                } flex flex-col justify-center`}
-              >
-                <a
-                  href="https://www.coursera.org/account/accomplishments/certificate/7Q4ZQZQZQZQZ"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-accent"
-                >
-                  Deep Learning Specialization
-                </a>{" "}
-                <div className="text-center p-3 text-base-content">
-                  By deeplearning.ai on Coursera
-                </div>
+                </div> */}
               </div>
             </li>
           </ul>
