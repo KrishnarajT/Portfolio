@@ -23,7 +23,7 @@ import {
 import ScrollButton from "../components/Scrollbutton";
 import { IconPhoneCall } from "@tabler/icons-react";
 const Home = () => {
-	const { theme, setTheme } = React.useContext(ThemeContext);
+	const { theme } = React.useContext(ThemeContext);
 	useEffect(() => {
 		console.log("theme changed to", theme);
 	}, [theme]);

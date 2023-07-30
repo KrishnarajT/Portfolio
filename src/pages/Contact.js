@@ -9,11 +9,8 @@ import {
 	IconBrandStackoverflow,
 	IconBrandTelegram,
 	IconBrandWhatsapp,
-	IconDeviceMobileMessage,
 	IconPhoneCall,
-	IconPhonePlus,
 } from "@tabler/icons-react";
-import { ThemeContext } from "../context/ThemeContext";
 import { ArrowUpRightIcon, CheckBadgeIcon } from "@heroicons/react/24/solid";
 import "../css/Contact.css";
 

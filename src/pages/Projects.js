@@ -2,13 +2,8 @@ import React from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import "../css/Projects.css";
 import ScrollButton from "../components/Scrollbutton";
-import {
-	ArrowRightIcon,
-	ArrowUpRightIcon,
-	CheckBadgeIcon,
-} from "@heroicons/react/24/solid";
+import { ArrowUpRightIcon, CheckBadgeIcon } from "@heroicons/react/24/solid";
 import { NavLink } from "react-router-dom";
-import Card from "../components/Card";
 import {
 	ordered_projects_major,
 	ordered_projects_mlds,
@@ -19,7 +14,7 @@ import {
 import ProjectSection from "../components/ProjectSection";
 
 const Projects = () => {
-	const { theme, setTheme } = React.useContext(ThemeContext);
+	const { theme } = React.useContext(ThemeContext);
 	return (
 		<div className="App Fade -z-40 p-4">
 			<div
