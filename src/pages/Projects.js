@@ -233,7 +233,7 @@ const Projects = () => {
 								.classList.remove("hidden");
 						}}
 					>
-						App Dev
+						PC & Mobile Apps
 					</div>
 					<div
 						className="text-xl tab"
