@@ -1,12 +1,18 @@
 import { IconCode } from "@tabler/icons-react";
 import React from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Card = (props) => {
+	const { theme } = React.useContext(ThemeContext);
 	return (
 		<div>
 			<div
-				className="card w-96 bg-base-200 shadow-2xl hover:scale-105 duration-300 transform-gpu
-            hover:bg-base-300 xl:w-[30rem] xl:h-96"
+				className={`card w-96 ${
+					theme === "light"
+						? "bg-base-300 hover:bg-gray-300"
+						: "bg-base-200"
+				} shadow-2xl hover:scale-105 duration-300 transform-gpu
+            hover:bg-base-300 xl:w-[30rem] xl:min-h-[40vh]`}
 				onClick={() => {
 					window.open(props.link, "_blank");
 				}}
