@@ -4,6 +4,7 @@ import {
 	IconAxe,
 	IconBooks,
 	IconBrain,
+	IconBrandCpp,
 	IconBrandGithub,
 	IconBrandPython,
 	IconBrandReact,
@@ -445,7 +446,7 @@ const About = () => {
 										Java Swing and AWT
 									</div>
 									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<UilLetterHindiA className="w-5 h-5 md:w-20 md:h-10" />
+										<IconBrandCpp className="w-5 h-5 md:w-20 md:h-10" />
 										SFML
 									</div>
 									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">

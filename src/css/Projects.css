@@ -110,3 +110,17 @@
     background-size: contain;
     background-position: center;
 }
+
+#app_light_projects {
+    background-image: url('../assets/undraw_my_app_re_gxtj.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#app_dark_projects {
+    background-image: url('../assets/undraw_my_app_re_gxtj_dark.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

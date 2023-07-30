@@ -365,7 +365,7 @@ const Projects = () => {
 			<div id="app_dev_projects" className="hidden">
 				<ProjectSection
 					ordered_projects={ordered_projects_app}
-					svg_name={"devsvg"}
+					svg_name={"app"}
 				/>
 			</div>
 			<div id="web_dev_projects" className="hidden">
