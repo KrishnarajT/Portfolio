@@ -9,23 +9,26 @@ import Home from "./pages/Home";
 import ThemeContextProvider from "./context/ThemeContext";
 
 function App() {
-  useEffect(() => {
-    themeChange(false);
-  }, []);
+	useEffect(() => {
+		themeChange(false);
+		// find the light button and toggle it.
+		// const light_button = document.getElementById("light_button");
+		// light_button.click();
+	}, []);
 
-  return (
-    <ThemeContextProvider>
-      <div className="">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
-    </ThemeContextProvider>
-  );
+	return (
+		<ThemeContextProvider>
+			<div className="">
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/about" element={<About />} />
+				</Routes>
+			</div>
+		</ThemeContextProvider>
+	);
 }
 
 export default App;

@@ -12,7 +12,7 @@ import {
   InformationCircleIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { IconUserBolt } from "@tabler/icons-react";
 
 export function Navbar() {
