@@ -122,6 +122,16 @@ const projects_mlds = [
     tags: ["Desktop"],
     new: false,
   },
+  {
+   title: "Router Log Analysis",
+    description:
+      "Analysing Simluated Router Logs from fabricated scenarios of common Attacks possible on a household. Part of Digital Forensics and Investigation Activity.",
+    image:
+      "https://github.com/KrishnarajT/Router-Log-Analysis/raw/main/router_log_analysis_graphs/normal_hourly_usage.png",
+    link: "https://github.com/KrishnarajT/Router-Log-Analysis",
+    tags: ["Analysis", "Cybersecurity", "Forensics"],
+    new: false,
+  },
 ];
 
 // now reorder the list based on new projects_mlds:
