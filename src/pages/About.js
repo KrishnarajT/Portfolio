@@ -198,16 +198,16 @@ const About = () => {
 										Pursuation
 									</div>
 									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
-										<IconEmpathize className="w-5 h-5 md:w-20 md:h-10" />
-										Interpersonal Skills
-									</div>
-									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconUsersGroup className="w-5 h-5 md:w-20 md:h-10" />
 										Public Speaking
 									</div>
 									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconBrain className="w-5 h-5 md:w-20 md:h-10" />
 										Critical Thinking
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<IconEmpathize className="w-5 h-5 md:w-20 md:h-10" />
+										Interpersonal Skills
 									</div>
 									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<IconChessKnight className="w-5 h-5 md:w-20 md:h-10" />
