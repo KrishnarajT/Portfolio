@@ -266,6 +266,10 @@ const About = () => {
 									</div>
 									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
 										<EmojioneFlagForTurkey className="w-5 h-5 md:w-20 md:h-10" />
+										Spanish Level 1
+									</div>
+									<div className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center py-4 md:h-16 md:text-2xl md:gap-0 pr-4">
+										<EmojioneFlagForTurkey className="w-5 h-5 md:w-20 md:h-10" />
 										Turkish Level 2
 									</div>
 								</div>
