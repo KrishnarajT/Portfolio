@@ -94,46 +94,42 @@ export const ordered_projects_major = [
 ];
 
 const projects_mlds = [
-  {
-    title: "Chit Chat Charts",
-    description:
-      "A Pyqt app made for visualizing and analyzing Chat data and texts between you and your friends.",
-    image:
-      "https://github.com/KrishnarajT/Chit-Chat-Charts/raw/main/Example/Graphs/krishnaraj%20with%20friend%20Top%2020%20Words.jpg",
-    link: "https://github.com/KrishnarajT/Chit-Chat-Charts",
-    tags: ["Data Analysis"],
-    new: true,
-  },
-  {
-    title: "Currency Converter",
-    description:
-      "A simple PyQt GUI for Converting Currencies, Graphically Viewing Historical Data and Plotting the last week's Rates.",
-    image:
-      "https://github.com/KrishnarajT/Currency-Converter/raw/main/Screenshots/Currency_converter_ss%203.png",
-    link: "https://github.com/KrishnarajT/Currency-Converter",
-    tags: ["Desktop"],
-    new: false,
-  },
-  {
-    title: "Vegapod GUI",
-    description:
-      "Realtime GUI for Monitoring vitals of a Hyperloop Pod made with Python and PyQt5, for MITWPU Vegapod Team.",
-    image:
-      "https://raw.githubusercontent.com/KrishnarajT/Vegapod-New-GUI/main/Screenshots/graph.png?token=GHSAT0AAAAAACCHOZZGPQ76EM62U3ZRD4V4ZGG52HA",
-    link: "https://github.com/KrishnarajT/Vegapod-New-GUI",
-    tags: ["Desktop"],
-    new: false,
-  },
-  {
-   title: "Router Log Analysis",
-    description:
-      "Analysing Simluated Router Logs from fabricated scenarios of common Attacks possible on a household. Part of Digital Forensics and Investigation Activity.",
-    image:
-      "https://github.com/KrishnarajT/Router-Log-Analysis/raw/main/router_log_analysis_graphs/normal_hourly_usage.png",
-    link: "https://github.com/KrishnarajT/Router-Log-Analysis",
-    tags: ["Analysis", "Cybersecurity", "Forensics"],
-    new: false,
-  },
+	{
+		title: "Chit Chat Charts",
+		description:
+			"A Pyqt app made for visualizing and analyzing Chat data and texts between you and your friends.",
+		image: "https://github.com/KrishnarajT/Chit-Chat-Charts/raw/main/Example/Graphs/krishnaraj%20with%20friend%20Top%2020%20Words.jpg",
+		link: "https://github.com/KrishnarajT/Chit-Chat-Charts",
+		tags: ["Data Analysis"],
+		new: true,
+	},
+	{
+		title: "Currency Converter",
+		description:
+			"A simple PyQt GUI for Converting Currencies, Graphically Viewing Historical Data and Plotting the last week's Rates.",
+		image: "https://github.com/KrishnarajT/Currency-Converter/raw/main/Screenshots/Currency_converter_ss%203.png",
+		link: "https://github.com/KrishnarajT/Currency-Converter",
+		tags: ["Desktop"],
+		new: false,
+	},
+	{
+		title: "Vegapod GUI",
+		description:
+			"Realtime GUI for Monitoring vitals of a Hyperloop Pod made with Python and PyQt5, for MITWPU Vegapod Team.",
+		image: "https://github.com/KrishnarajT/Vegapod-New-GUI/raw/main/Screenshots/graph.png",
+		link: "https://github.com/KrishnarajT/Vegapod-New-GUI",
+		tags: ["Desktop"],
+		new: false,
+	},
+	{
+		title: "Router Log Analysis",
+		description:
+			"Analysing Simluated Router Logs from fabricated scenarios of common Attacks possible on a household. Part of Digital Forensics and Investigation Activity.",
+		image: "https://github.com/KrishnarajT/Router-Log-Analysis/raw/main/router_log_analysis_graphs/normal_hourly_usage.png",
+		link: "https://github.com/KrishnarajT/Router-Log-Analysis",
+		tags: ["Analysis", "Cybersecurity", "Forensics"],
+		new: false,
+	},
 ];
 
 // now reorder the list based on new projects_mlds:
@@ -150,121 +146,111 @@ export const ordered_projects_mlds = [
 
 // app development projects
 const projects_app = [
-  {
-    title: "Thoda Upar Thoda Neeche",
-    description:
-      "It is a very simple and basic Casual Slider game you can play to pass time. Now on the Play Store",
-    image:
-      "https://github.com/KrishnarajT/Thoda-Upar-Thoda-Neeche/raw/main/Screenshots/Presentation.png",
-    link: "https://play.google.com/store/apps/details?id=com.krishnaraj.thoda_upar_thoda_neeche",
-    tags: ["Play Store", "Game", "App", "Android"],
-    new: true,
-  },
-  {
-    title: "Favourite Places",
-    description:
-      "App to Record your Favourite Places with Images and Location. ",
-    image:
-      "https://github.com/KrishnarajT/Favourite-Places/blob/main/screenshots/Presentation%20Dark.jpg?raw=true",
-    link: "https://github.com/KrishnarajT/Favourite-Places",
-    tags: ["App", "Android"],
-    new: true,
-  },
-  {
-    title: "To Do App",
-    description: "Simple App to List Todo Tasks.",
-    image:
-      "https://github.com/KrishnarajT/Todo-App/blob/main/Screenshots/Apple%20iPhone%2011%20Pro%20Max%20Presentation.png?raw=true",
-    link: "https://github.com/KrishnarajT/Todo-App",
-    tags: ["App", "Android"],
-    new: false,
-  },
-  {
-    title: "What My No",
-    description: "Simple Guessing Game made to learn React Native.",
-    image:
-      "https://github.com/KrishnarajT/What-my-no/raw/main/screenshots/presentation.jpg",
-    link: "https://github.com/KrishnarajT/What-my-no",
-    tags: ["Game", "App", "Android"],
-    new: false,
-  },
+	{
+		title: "Thoda Upar Thoda Neeche",
+		description:
+			"It is a very simple and basic Casual Slider game you can play to pass time. Now on the Play Store",
+		image: "https://github.com/KrishnarajT/Thoda-Upar-Thoda-Neeche/raw/main/Screenshots/Presentation.png",
+		link: "https://play.google.com/store/apps/details?id=com.krishnaraj.thoda_upar_thoda_neeche",
+		tags: ["Play Store", "Game", "App", "Android"],
+		new: true,
+	},
+	{
+		title: "Favourite Places",
+		description:
+			"App to Record your Favourite Places with Images and Location. ",
+		image: "https://github.com/KrishnarajT/Favourite-Places/blob/main/screenshots/Presentation%20Dark.jpg?raw=true",
+		link: "https://github.com/KrishnarajT/Favourite-Places",
+		tags: ["App", "Android"],
+		new: true,
+	},
+	{
+		title: "To Do App",
+		description: "Simple App to List Todo Tasks.",
+		image: "https://github.com/KrishnarajT/Todo-App/blob/main/Screenshots/Apple%20iPhone%2011%20Pro%20Max%20Presentation.png?raw=true",
+		link: "https://github.com/KrishnarajT/Todo-App",
+		tags: ["App", "Android"],
+		new: false,
+	},
+	{
+		title: "What My No",
+		description: "Simple Guessing Game made to learn React Native.",
+		image: "https://github.com/KrishnarajT/What-my-no/raw/main/screenshots/presentation.jpg",
+		link: "https://github.com/KrishnarajT/What-my-no",
+		tags: ["Game", "App", "Android"],
+		new: false,
+	},
 
-  {
-    title: "Quotepaper Designer",
-    description:
-      "CLI Tool to add quotes from wikiquotes to images from your favourite shows and make wallpapers from those scenes.",
-    image:
-      "https://github.com/KrishnarajT/Quotepaper-Designer/raw/master/Shows/The%20Mentalist/s02%20-%2047.jpg",
-    link: "https://github.com/KrishnarajT/Quotepaper-Designer",
-    tags: ["App", "Desktop"],
-    new: false,
-  },
-  {
-    title: "Currency Converter",
-    description:
-      "A simple PyQt GUI for Converting Currencies, Graphically Viewing Historical Data and Plotting the last week's Rates.",
-    image:
-      "https://github.com/KrishnarajT/Currency-Converter/raw/main/Screenshots/Currency_converter_ss%201.png",
-    link: "https://github.com/KrishnarajT/Currency-Converter",
-    tags: ["App", "Desktop"],
-    new: false,
-  },
-  {
-    title: "Kappa Video Downloader",
-    description:
-      "A simple youtube Video Downloader made with Python for 12th Project.",
-    image:
-      "https://github.com/KrishnarajT/IP-Project-Youtube-Video-Downloader/raw/main/Progress%20Images/12-11-20/Progress%20Screenshots%20(3).png",
-    link: "https://github.com/KrishnarajT/IP-Project-Youtube-Video-Downloader",
-    tags: ["Desktop"],
-    new: false,
-  },
-  {
-    title: "Visually Sorting Arrays",
-    description:
-      "Shows visually the way all the top 10 sorting algorithms work, by allowing you to choose from a variety of ranges",
-    image:
-      "https://github.com/KrishnarajT/Visually-Sorting-Arrays/raw/master/Screenshots/quick.png",
-    link: "https://github.com/KrishnarajT/Tippy",
-    tags: ["Desktop"],
-    new: false,
-  },
-  {
-    title: "Vegapod GUI",
-    description:
-      "Realtime GUI for Monitoring vitals of a Hyperloop Pod made with Python and PyQt5, for MITWPU Vegapod Team.",
-    image:
-      "https://raw.githubusercontent.com/KrishnarajT/Vegapod-New-GUI/main/Screenshots/graph.png?token=GHSAT0AAAAAACCHOZZGPQ76EM62U3ZRD4V4ZGG52HA",
-    link: "https://github.com/KrishnarajT/Vegapod-New-GUI",
-    tags: ["Desktop"],
-    new: false,
-  },
-  {
-    title: "Ambulance Detector",
-    description:
-      "IOT Project by our group, for detecting an ambulance passing through a signal with a Raspberry Pi with a Camera Module.",
-    image:
-      "https://github.com/KrishnarajT/Ambulance-Detector/raw/main/Pics/IOT%20Project%206.jpg",
-    link: "https://github.com/KrishnarajT/Ambulance-Detector",
-    tags: ["Desktop", "Raspberry Pi", "Object Detection"],
-    new: false,
-  },
-  {
-    title: "Tippy",
-    description: "Simple App to Calculate Tips",
-    // image: "https://source.unsplash.com/random",
-    link: "https://github.com/KrishnarajT/Tippy",
-    tags: ["App", "Android"],
-    new: false,
-  },
-  {
-    title: "Car Game",
-    description: "Extremely Simple Driving Game in Unity.",
-    image: "https://github.com/KrishnarajT/Car-Game/raw/main/screenshot.jpeg",
-    link: "https://github.com/KrishnarajT/Car-Game",
-    tags: ["Game", "App", "Android"],
-    new: false,
-  },
+	{
+		title: "Quotepaper Designer",
+		description:
+			"CLI Tool to add quotes from wikiquotes to images from your favourite shows and make wallpapers from those scenes.",
+		image: "https://github.com/KrishnarajT/Quotepaper-Designer/raw/master/Shows/The%20Mentalist/s02%20-%2047.jpg",
+		link: "https://github.com/KrishnarajT/Quotepaper-Designer",
+		tags: ["App", "Desktop"],
+		new: false,
+	},
+	{
+		title: "Currency Converter",
+		description:
+			"A simple PyQt GUI for Converting Currencies, Graphically Viewing Historical Data and Plotting the last week's Rates.",
+		image: "https://github.com/KrishnarajT/Currency-Converter/raw/main/Screenshots/Currency_converter_ss%201.png",
+		link: "https://github.com/KrishnarajT/Currency-Converter",
+		tags: ["App", "Desktop"],
+		new: false,
+	},
+	{
+		title: "Kappa Video Downloader",
+		description:
+			"A simple youtube Video Downloader made with Python for 12th Project.",
+		image: "https://github.com/KrishnarajT/IP-Project-Youtube-Video-Downloader/raw/main/Progress%20Images/12-11-20/Progress%20Screenshots%20(3).png",
+		link: "https://github.com/KrishnarajT/IP-Project-Youtube-Video-Downloader",
+		tags: ["Desktop"],
+		new: false,
+	},
+	{
+		title: "Visually Sorting Arrays",
+		description:
+			"Shows visually the way all the top 10 sorting algorithms work, by allowing you to choose from a variety of ranges",
+		image: "https://github.com/KrishnarajT/Visually-Sorting-Arrays/raw/master/Screenshots/quick.png",
+		link: "https://github.com/KrishnarajT/Tippy",
+		tags: ["Desktop"],
+		new: false,
+	},
+	{
+		title: "Vegapod GUI",
+		description:
+			"Realtime GUI for Monitoring vitals of a Hyperloop Pod made with Python and PyQt5, for MITWPU Vegapod Team.",
+		image: "https://github.com/KrishnarajT/Vegapod-New-GUI/raw/main/Screenshots/graph.png",
+		link: "https://github.com/KrishnarajT/Vegapod-New-GUI",
+		tags: ["Desktop"],
+		new: false,
+	},
+	{
+		title: "Ambulance Detector",
+		description:
+			"IOT Project by our group, for detecting an ambulance passing through a signal with a Raspberry Pi with a Camera Module.",
+		image: "https://github.com/KrishnarajT/Ambulance-Detector/raw/main/Pics/IOT%20Project%206.jpg",
+		link: "https://github.com/KrishnarajT/Ambulance-Detector",
+		tags: ["Desktop", "Raspberry Pi", "Object Detection"],
+		new: false,
+	},
+	{
+		title: "Tippy",
+		description: "Simple App to Calculate Tips",
+		// image: "https://source.unsplash.com/random",
+		link: "https://github.com/KrishnarajT/Tippy",
+		tags: ["App", "Android"],
+		new: false,
+	},
+	{
+		title: "Car Game",
+		description: "Extremely Simple Driving Game in Unity.",
+		image: "https://github.com/KrishnarajT/Car-Game/raw/main/screenshot.jpeg",
+		link: "https://github.com/KrishnarajT/Car-Game",
+		tags: ["Game", "App", "Android"],
+		new: false,
+	},
 ];
 
 // now reorder the list based on new projects_app:
