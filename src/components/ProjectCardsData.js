@@ -1,82 +1,84 @@
 const projects_major = [
-  {
-    title: "Poco Loco",
-    description: "Music Player Made with Vanilla JS. Themed on the Movie Coco.",
-    image:
-      "https://github.com/KrishnarajT/Poco-Loco/raw/main/doc/Screenshots/login.png",
-    link: "https://github.com/KrishnarajT/Poco-Loco",
-    tags: ["Js", "Website"],
-    new: true,
-  },
-  {
-    title: "Thoda Upar Thoda Neeche",
-    description:
-      "It is a very simple and basic Casual Slider game you can play to pass time. Now on the Play Store",
-    image:
-      "https://github.com/KrishnarajT/Thoda-Upar-Thoda-Neeche/raw/main/Screenshots/Presentation.png",
-    link: "https://play.google.com/store/apps/details?id=com.krishnaraj.thoda_upar_thoda_neeche",
-    tags: ["Play Store", "Game", "App", "Android"],
-    new: true,
-  },
-  {
-    title: "Chit Chat Charts",
-    description:
-      "A Pyqt app made for visualizing and analyzing Chat data and texts between you and your friends.",
-    image:
-      "https://github.com/KrishnarajT/Chit-Chat-Charts/raw/main/Example/Graphs/krishnaraj%20with%20friend%20Top%2020%20Words.jpg",
-    link: "https://github.com/KrishnarajT/Chit-Chat-Charts",
-    tags: ["Data Analysis"],
-    new: true,
-  },
-  {
-    title: "How Much",
-    description: "Simple Guessing Game made to learn React Native.",
-    image:
-      "https://github.com/KrishnarajT/How-Much/raw/main/design/Screenshots/Game%20Play.gif",
-    link: "https://github.com/KrishnarajT/How-Much",
-    tags: ["Game"],
-    new: true,
-  },
-  {
-    title: "Quotepaper Designer",
-    description:
-      "CLI Tool to add quotes from wikiquotes to images from your favourite shows and make wallpapers from those scenes.",
-    image:
-      "https://github.com/KrishnarajT/Quotepaper-Designer/raw/master/Shows/The%20Mentalist/s02%20-%2047.jpg",
-    link: "https://github.com/KrishnarajT/Quotepaper-Designer",
-    tags: ["App", "Desktop"],
-    new: false,
-  },
-  {
-    title: "Visually Sorting Arrays",
-    description:
-      "Shows visually the way all the top 10 sorting algorithms work, by allowing you to choose from a variety of ranges",
-    image:
-      "https://github.com/KrishnarajT/Visually-Sorting-Arrays/raw/master/Screenshots/quick.png",
-    link: "https://github.com/KrishnarajT/Tippy",
-    tags: ["Desktop"],
-    new: false,
-  },
-  {
-    title: "Puzzlelists",
-    description:
-      "An Arcade which has many small Puzzle kinda games in it. Also the Python Project for Second Year",
-    image:
-      "https://github.com/KrishnarajT/PuzzleLists/raw/main/documentation/screenshots/welcome_screen.png",
-    link: "https://github.com/KrishnarajT/Car-Game",
-    tags: ["Game", "App", "Python"],
-    new: true,
-  },
-  {
-    title: "The Hangman project in C++",
-    description:
-      "The classic usual hangman Game, in C++, with graphics and a Marvel and John Wick theme.",
-    image:
-      "https://github.com/KrishnarajT/The-Hangman-Project/raw/master/Screenshots/HangMan_praiyHWOTy.png",
-    link: "https://github.com/KrishnarajT/The-Hangman-Project",
-    tags: ["Game"],
-    new: false,
-  },
+	{
+		title: "Poco Loco",
+		description:
+			"Music Player Made with Vanilla JS. Themed on the Movie Coco.",
+		image: "https://github.com/KrishnarajT/Poco-Loco/raw/main/doc/Screenshots/login.png",
+		link: "https://github.com/KrishnarajT/Poco-Loco",
+		tags: ["Js", "Website", "React"],
+		new: true,
+	},
+	{
+		title: "Anti Brutus",
+		description:
+			"A Password Manager, and Generator, built with Security and Encryption in mind.",
+		image: "https://github.com/KrishnarajT/Anti-Brutus/raw/main/design/anti-brutus.gif",
+		link: "https://github.com/KrishnarajT/Anti-Brutus",
+		tags: ["Js", "Website", "React"],
+		new: true,
+	},
+	{
+		title: "Thoda Upar Thoda Neeche",
+		description:
+			"It is a very simple and basic Casual Slider game you can play to pass time. Now on the Play Store",
+		image: "https://github.com/KrishnarajT/Thoda-Upar-Thoda-Neeche/raw/main/Screenshots/Presentation.png",
+		link: "https://play.google.com/store/apps/details?id=com.krishnaraj.thoda_upar_thoda_neeche",
+		tags: ["Play Store", "Game", "App", "Android"],
+		new: true,
+	},
+	{
+		title: "Chit Chat Charts",
+		description:
+			"A Pyqt app made for visualizing and analyzing Chat data and texts between you and your friends.",
+		image: "https://github.com/KrishnarajT/Chit-Chat-Charts/raw/main/Example/Graphs/krishnaraj%20with%20friend%20Top%2020%20Words.jpg",
+		link: "https://github.com/KrishnarajT/Chit-Chat-Charts",
+		tags: ["Data Analysis"],
+		new: true,
+	},
+	{
+		title: "How Much",
+		description: "Simple Guessing Game made to learn React Native.",
+		image: "https://github.com/KrishnarajT/How-Much/raw/main/design/Screenshots/Game%20Play.gif",
+		link: "https://github.com/KrishnarajT/How-Much",
+		tags: ["Game"],
+		new: true,
+	},
+	{
+		title: "Quotepaper Designer",
+		description:
+			"CLI Tool to add quotes from wikiquotes to images from your favourite shows and make wallpapers from those scenes.",
+		image: "https://github.com/KrishnarajT/Quotepaper-Designer/raw/master/Shows/The%20Mentalist/s02%20-%2047.jpg",
+		link: "https://github.com/KrishnarajT/Quotepaper-Designer",
+		tags: ["App", "Desktop"],
+		new: false,
+	},
+	{
+		title: "Visually Sorting Arrays",
+		description:
+			"Shows visually the way all the top 10 sorting algorithms work, by allowing you to choose from a variety of ranges",
+		image: "https://github.com/KrishnarajT/Visually-Sorting-Arrays/raw/master/Screenshots/quick.png",
+		link: "https://github.com/KrishnarajT/Tippy",
+		tags: ["Desktop"],
+		new: false,
+	},
+	{
+		title: "Puzzlelists",
+		description:
+			"An Arcade which has many small Puzzle kinda games in it. Also the Python Project for Second Year",
+		image: "https://github.com/KrishnarajT/PuzzleLists/raw/main/documentation/screenshots/welcome_screen.png",
+		link: "https://github.com/KrishnarajT/Car-Game",
+		tags: ["Game", "App", "Python"],
+		new: true,
+	},
+	{
+		title: "The Hangman project in C++",
+		description:
+			"The classic usual hangman Game, in C++, with graphics and a Marvel and John Wick theme.",
+		image: "https://github.com/KrishnarajT/The-Hangman-Project/raw/master/Screenshots/HangMan_praiyHWOTy.png",
+		link: "https://github.com/KrishnarajT/The-Hangman-Project",
+		tags: ["Game"],
+		new: false,
+	},
 ];
 
 // now reorder the list based on new projects_major:
@@ -273,92 +275,94 @@ const old_projects_app = projects_app.filter(
 export const ordered_projects_app = [...new_projects_app, ...old_projects_app];
 
 const projects_web = [
-  {
-    title: "Portfolio Page",
-    description: "That would be this website!",
-    image:
-      "https://github.com/KrishnarajT/Portfolio/blob/main/src/assets/img/screenshot.png?raw=true",
-    link: "https://github.com/KrishnarajT/Portfolio",
-    tags: ["Project"],
-    new: true,
-  },
+	{
+		title: "Anti Brutus",
+		description:
+			"A Password Manager, and Generator, built with Security and Encryption in mind.",
+		image: "https://github.com/KrishnarajT/Anti-Brutus/raw/main/design/anti-brutus.gif",
+		link: "https://github.com/KrishnarajT/Anti-Brutus",
+		tags: ["Js", "Website", "React"],
+		new: true,
+	},
+	{
+		title: "Portfolio Page",
+		description: "That would be this website!",
+		image: "https://github.com/KrishnarajT/Portfolio/blob/main/src/assets/img/screenshot.png?raw=true",
+		link: "https://github.com/KrishnarajT/Portfolio",
+		tags: ["Project"],
+		new: true,
+	},
 
-  {
-    title: "Password Generator",
-    description:
-      "A Custom Password Generator So I dont have to remember them anymore. ",
-    image:
-      "https://github.com/KrishnarajT/Password-Generator/raw/main/design/screenshots/home_page_light.png",
-    link: "https://github.com/KrishnarajT/Password-Generator",
-    tags: ["Cyber", "Website"],
-    new: true,
-  },
-  {
-    title: "Poco Loco",
-    description: "Music Player Made with Vanilla JS. Themed on the Movie Coco.",
-    image:
-      "https://github.com/KrishnarajT/Poco-Loco/raw/main/doc/Screenshots/login.png",
-    link: "https://github.com/KrishnarajT/Poco-Loco",
-    tags: ["Js", "Website"],
-    new: true,
-  },
-  {
-    title: "Image Searcher",
-    description:
-      "A place to search for images, from free and creditable sources and their APIs",
-    image:
-      "https://github.com/KrishnarajT/Images-Searcher/raw/main/Screenshots/ss.png",
-    link: "https://github.com/KrishnarajT/Images-Searcher",
-    tags: ["Js", "Website"],
-    new: false,
-  },
-  {
-    title: "Quotepaper Generator",
-    description:
-      "Generate random quotes as wallpapers, with auto relevant background images.",
-    image:
-      "https://github.com/KrishnarajT/Quotepaper-Generator/raw/main/images/quotes1.png",
-    link: "https://github.com/KrishnarajT/Quotepaper-Generator",
-    tags: ["Js", "Website"],
-    new: false,
-  },
-  {
-    title: "CP from Here",
-    description:
-      "A simple website to host a file that would contain anything that I want to share with my friends or anyone anywhere.",
-    // image: "https://source.unsplash.com/random",
-    link: "https://github.com/KrishnarajT/Copy-from-here",
-    tags: ["Project"],
-    new: false,
-  },
-  {
-    title: "Game of Memories",
-    description: "A simple Memory Game themed on Game of Thrones",
-    image:
-      "https://github.com/KrishnarajT/Game-of-Memories/raw/main/game-of-memories.gif",
-    link: "https://github.com/KrishnarajT/Game-of-Memories",
-    tags: ["Game", "Website"],
-    new: false,
-  },
-  {
-    title: "Snap A Mole",
-    description:
-      "Yet another Simple Website, the classic Wack a Mole game, in Avengers Style",
-    image:
-      "https://github.com/KrishnarajT/Snap-A-Mole/raw/main/screenshots.gif",
-    link: "https://github.com/KrishnarajT/Snap-A-Mole",
-    tags: ["Game", "Website"],
-    new: false,
-  },
-  {
-    title: "Brick Breaker",
-    description: "The classic Brick Breaker Game, in HTML, CSS and Js",
-    image:
-      "https://github.com/KrishnarajT/Brick-Breaker/raw/main/screenshots.gif",
-    link: "https://github.com/KrishnarajT/Brick-Breaker",
-    tags: ["Game"],
-    new: false,
-  },
+	{
+		title: "Password Generator",
+		description:
+			"A Custom Password Generator So I dont have to remember them anymore. ",
+		image: "https://github.com/KrishnarajT/Password-Generator/raw/main/design/screenshots/home_page_light.png",
+		link: "https://github.com/KrishnarajT/Password-Generator",
+		tags: ["Cyber", "Website"],
+		new: true,
+	},
+	{
+		title: "Poco Loco",
+		description:
+			"Music Player Made with Vanilla JS. Themed on the Movie Coco.",
+		image: "https://github.com/KrishnarajT/Poco-Loco/raw/main/doc/Screenshots/login.png",
+		link: "https://github.com/KrishnarajT/Poco-Loco",
+		tags: ["Js", "Website"],
+		new: true,
+	},
+	{
+		title: "Image Searcher",
+		description:
+			"A place to search for images, from free and creditable sources and their APIs",
+		image: "https://github.com/KrishnarajT/Images-Searcher/raw/main/Screenshots/ss.png",
+		link: "https://github.com/KrishnarajT/Images-Searcher",
+		tags: ["Js", "Website"],
+		new: false,
+	},
+	{
+		title: "Quotepaper Generator",
+		description:
+			"Generate random quotes as wallpapers, with auto relevant background images.",
+		image: "https://github.com/KrishnarajT/Quotepaper-Generator/raw/main/images/quotes1.png",
+		link: "https://github.com/KrishnarajT/Quotepaper-Generator",
+		tags: ["Js", "Website"],
+		new: false,
+	},
+	{
+		title: "CP from Here",
+		description:
+			"A simple website to host a file that would contain anything that I want to share with my friends or anyone anywhere.",
+		// image: "https://source.unsplash.com/random",
+		link: "https://github.com/KrishnarajT/Copy-from-here",
+		tags: ["Project"],
+		new: false,
+	},
+	{
+		title: "Game of Memories",
+		description: "A simple Memory Game themed on Game of Thrones",
+		image: "https://github.com/KrishnarajT/Game-of-Memories/raw/main/game-of-memories.gif",
+		link: "https://github.com/KrishnarajT/Game-of-Memories",
+		tags: ["Game", "Website"],
+		new: false,
+	},
+	{
+		title: "Snap A Mole",
+		description:
+			"Yet another Simple Website, the classic Wack a Mole game, in Avengers Style",
+		image: "https://github.com/KrishnarajT/Snap-A-Mole/raw/main/screenshots.gif",
+		link: "https://github.com/KrishnarajT/Snap-A-Mole",
+		tags: ["Game", "Website"],
+		new: false,
+	},
+	{
+		title: "Brick Breaker",
+		description: "The classic Brick Breaker Game, in HTML, CSS and Js",
+		image: "https://github.com/KrishnarajT/Brick-Breaker/raw/main/screenshots.gif",
+		link: "https://github.com/KrishnarajT/Brick-Breaker",
+		tags: ["Game"],
+		new: false,
+	},
 ];
 
 // now reorder the list based on new projects_web:
