@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import {
 	IconAlphabetLatin,
+	IconArrowRight,
+	IconArrowUpRight,
 	IconAxe,
 	IconBooks,
 	IconBrain,
@@ -43,6 +45,7 @@ import {
 	MdiMicrosoftOffice,
 	SkillIconsJavaLight,
 	MdiTailwind,
+	EosIconsTyping,
 } from "../components/EmojioneFlagForFrance";
 
 const About = () => {
@@ -69,11 +72,7 @@ const About = () => {
                 md:justify-between md:flex-row-reverse"
 					>
 						<div
-							id={
-								theme === "light"
-									? "introsvg_light_about"
-									: "introsvg_dark_about"
-							}
+							id={theme === "light" ? "introsvg_light_about" : "introsvg_dark_about"}
 							className="p-4 m-4 min-w-[80vw] min-h-[25vh]
                         md:w-full md:h-full md:min-w-[50vw] md:min-h-[50vh]"
 						></div>
@@ -87,14 +86,10 @@ const About = () => {
 							</div>
 							<div className="text-3xl break-words p-4 text-center md:text-4xl">
 								I am Krishnaraj Thadesar! An Aspiring{" "}
-								<span className="text-accent">
-									Data Scientist
-								</span>
-								, a Full Stack Developer, and a 3rd year
-								Undergrad at MITWPU in Pune.
+								<span className="text-accent">Data Scientist</span>, a Full Stack
+								Developer, and a 3rd year Undergrad at MITWPU in Pune.
 								<br></br>
-								This page will help you get to know me a little
-								better!
+								This page will help you get to know me a little better!
 							</div>
 						</div>
 					</div>
@@ -120,11 +115,9 @@ const About = () => {
 				<div className="text-5xl p-4 m-4 mb-0">Who I am</div>
 				<IconUserQuestion className="w-16 h-16" />
 				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
-					I am presently a Student at MITWPU, Pune. I would like to
-					become a Data Scientist in hopes of following my love for
-					Mathematics and Statistics. I am also a Full Stack
-					Developer, and I have worked on several projects in the
-					past.
+					I am presently a Student at MITWPU, Pune. I would like to become a Data
+					Scientist in hopes of following my love for Mathematics and Statistics. I am
+					also a Full Stack Developer, and I have worked on several projects in the past.
 					<div className="join join-vertical w-full mt-5">
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
@@ -145,8 +138,7 @@ const About = () => {
 											PreSchool in Dar Es Salaam, Tanzania
 										</li>
 										<li className="text-xl md:text-2xl">
-											Middle and High School in Doha,
-											Qatar
+											Middle and High School in Doha, Qatar
 										</li>
 										<li className="text-xl md:text-2xl">
 											In Pune, India Since College, 2020
@@ -185,10 +177,7 @@ const About = () => {
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
 							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
-								<IconPresentation
-									className="w-5 h-5"
-									stroke={1.5}
-								/>
+								<IconPresentation className="w-5 h-5" stroke={1.5} />
 								Soft Skills{" "}
 							</div>
 							<div className="collapse-content">
@@ -298,13 +287,12 @@ const About = () => {
 				<div className="text-5xl p-4 m-4 mb-0">What I do</div>
 				<IconChartDots stroke={1.5} className="w-16 h-16" />
 				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
-					I have a passion for learning to code, and building creating
-					things that can help people. Due to that most of my focus in
-					the beginning was on making Apps and Games. Since then I
-					have started focusing more on Data Science and Statistics
-					due my love for Charts, and just analysing data in general.
-					It has been an immensely rewarding experience, and I am
-					looking forward to learning more about it.
+					I have a passion for learning to code, and building creating things that can
+					help people. Due to that most of my focus in the beginning was on making Apps
+					and Games. Since then I have started focusing more on Data Science and
+					Statistics due my love for Charts, and just analysing data in general. It has
+					been an immensely rewarding experience, and I am looking forward to learning
+					more about it.
 					<div className="join join-vertical w-full mt-5">
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
@@ -316,22 +304,18 @@ const About = () => {
 								<p className="text-lg md:text-2xl">
 									<ul className="list-inside list-disc">
 										<li className="text-xl md:text-2xl">
-											Data Science, Machine Learning and
-											Data Analysis
+											Data Science, Machine Learning and Data Analysis
 										</li>
 										<li className="text-xl md:text-2xl">
-											Managing Big Data, Visualizing Data
-											and Presenting it well
+											Managing Big Data, Visualizing Data and Presenting it
+											well
 										</li>
 										<li className="text-xl md:text-2xl">
-											Managing and Creating large
-											Databases.
+											Managing and Creating large Databases.
 										</li>
 										<li className="text-xl md:text-2xl">
-											Secondary focus on anything
-											creative, be it Software
-											Development, Game Development, or
-											Web Development.
+											Secondary focus on anything creative, be it Software
+											Development, Game Development, or Web Development.
 										</li>
 									</ul>
 								</p>
@@ -370,16 +354,28 @@ const About = () => {
 										<BiWindows className="w-5 h-5 md:w-20 md:h-10" />
 										Windows and OS Management
 									</div>
+									<div
+										className="badge badge-neutral badge-lg text-xl flex gap-2 justify-center 
+									py-4 md:h-16 md:text-2xl md:gap-0 pr-4 cursor-pointer"
+										onClick={() => {
+											window.open(
+												"https://monkeytype.com/profile/KrishnarajT"
+											);
+										}}
+									>
+										<EosIconsTyping className="w-5 h-5 md:w-20 md:h-10" />
+										Typing at 130 WPM
+										<div>
+											<IconArrowUpRight className="w-7 h-7 m-1 text-secondary cursor-pointer" />
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div className="collapse bg-base-200 collapse-arrow text-left my-3 join-item">
 							<input type="checkbox" />
 							<div className="collapse-title md:text-3xl text-2xl font-large flex gap-3 items-center">
-								<IconPresentation
-									className="w-5 h-5"
-									stroke={1.5}
-								/>
+								<IconPresentation className="w-5 h-5" stroke={1.5} />
 								Programming Languages{" "}
 							</div>
 							<div className="collapse-content">
@@ -526,14 +522,10 @@ const About = () => {
 							<div className="flex flex-col text-left">
 								<span
 									className={`text-2xl ${
-										theme === "light"
-											? "text-neutral"
-											: "text-primary"
+										theme === "light" ? "text-neutral" : "text-primary"
 									} hover:text-accent cursor-pointe`}
 									onClick={() => {
-										window.open(
-											"http://arunodayaschool.com/"
-										);
+										window.open("http://arunodayaschool.com/");
 									}}
 								>
 									Arunodaya Public School
@@ -546,21 +538,15 @@ const About = () => {
 							<div className="flex flex-col text-left">
 								<span
 									className={`text-2xl ${
-										theme === "light"
-											? "text-neutral"
-											: "text-primary"
+										theme === "light" ? "text-neutral" : "text-primary"
 									} hover:text-accent cursor-pointer`}
 									onClick={() => {
-										window.open(
-											"https://indianschooldsm.ac.tz/"
-										);
+										window.open("https://indianschooldsm.ac.tz/");
 									}}
 								>
 									Indian Public School
 								</span>
-								<span className="text-xl">
-									Dar Es Salaam, Tanzania
-								</span>
+								<span className="text-xl">Dar Es Salaam, Tanzania</span>
 								<span className="text-xl">2006 - 2008</span>
 							</div>
 						</li>
@@ -568,14 +554,10 @@ const About = () => {
 							<div className="flex flex-col text-left">
 								<span
 									className={`text-2xl ${
-										theme === "light"
-											? "text-neutral"
-											: "text-primary"
+										theme === "light" ? "text-neutral" : "text-primary"
 									} hover:text-accent cursor-pointer`}
 									onClick={() => {
-										window.open(
-											"https://www.stxavierschoolthane.com/"
-										);
+										window.open("https://www.stxavierschoolthane.com/");
 									}}
 								>
 									St. Xavier's School
@@ -588,22 +570,16 @@ const About = () => {
 							<div className="flex flex-col text-left">
 								<span
 									className={`text-2xl ${
-										theme === "light"
-											? "text-neutral"
-											: "text-primary"
+										theme === "light" ? "text-neutral" : "text-primary"
 									} hover:text-accent cursor-pointer`}
 									onClick={() => {
-										window.open(
-											"https://bhavansqatar.org/"
-										);
+										window.open("https://bhavansqatar.org/");
 									}}
 								>
 									Bhavan's Public School
 								</span>
 								<span className="text-xl">Doha, Qatar</span>
-								<span className="text-xl">
-									CBSE 10th - 91.8%
-								</span>
+								<span className="text-xl">CBSE 10th - 91.8%</span>
 								<span className="text-xl">2011 - 2019</span>
 							</div>
 						</li>
@@ -611,22 +587,16 @@ const About = () => {
 							<div className="flex flex-col text-left">
 								<span
 									className={`text-2xl ${
-										theme === "light"
-											? "text-neutral"
-											: "text-primary"
+										theme === "light" ? "text-neutral" : "text-primary"
 									} hover:text-accent cursor-pointer`}
 									onClick={() => {
-										window.open(
-											"https://www.mknspune.com/"
-										);
+										window.open("https://www.mknspune.com/");
 									}}
 								>
 									Mansukhbhai Kothari Public School
 								</span>
 								<span className="text-xl">Pune, India</span>
-								<span className="text-xl">
-									CBSE 12th Science - 96.4%
-								</span>
+								<span className="text-xl">CBSE 12th Science - 96.4%</span>
 								<span className="text-xl">2011 - 2019</span>
 							</div>
 						</li>
@@ -634,18 +604,13 @@ const About = () => {
 							<div className="flex flex-col text-left">
 								<span
 									className={`text-2xl ${
-										theme === "light"
-											? "text-neutral"
-											: "text-primary"
+										theme === "light" ? "text-neutral" : "text-primary"
 									} hover:text-accent cursor-pointer`}
 									onClick={() => {
-										window.open(
-											"https://www.mitwpu.edu.in/"
-										);
+										window.open("https://www.mitwpu.edu.in/");
 									}}
 								>
-									Dr. Vishwanath Karads MIT World Peace
-									University
+									Dr. Vishwanath Karads MIT World Peace University
 								</span>
 								<span className="text-xl">
 									B.Tech in CSE in Cyber Security & Forensics
@@ -674,9 +639,7 @@ const About = () => {
 				id="about_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<div className="text-5xl p-4 m-4 text-center">
-					Work Experience
-				</div>
+				<div className="text-5xl p-4 m-4 text-center">Work Experience</div>
 				<IconCode className="w-16 h-16" />
 				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
 					<ul className="steps steps-vertical">
@@ -736,18 +699,14 @@ const About = () => {
 				id="about_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<div className="text-3xl p-4 m-4 text-center">
-					Certifications and Achievements
-				</div>
+				<div className="text-3xl p-4 m-4 text-center">Certifications and Achievements</div>
 				<AcademicCapIcon className="w-16 h-16 mt-0" />
 				<div className="text-center text-2xl md:text-4xl p-4 m-4 break-words xl:w-4/6">
 					<ul className="flex justify-center flex-col items-center">
 						<li className="text-xl bg-base-200 p-4 rounded-xl my-2 w-fit lg:px-32">
 							<div
 								className={`text-2xl ${
-									theme === "light"
-										? "text-neutral"
-										: "text-primary"
+									theme === "light" ? "text-neutral" : "text-primary"
 								} flex flex-col justify-center`}
 							>
 								<a
@@ -783,15 +742,12 @@ const About = () => {
 				id="about_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<div className="text-4xl text-center p-4">
-					Interested in Hiring?{" "}
-				</div>
+				<div className="text-4xl text-center p-4">Interested in Hiring? </div>
 				{/* <IconUserQuestion className="w-16 h-16" /> */}
 				<div className="text-center text-2xl md:text-4xl break-words xl:w-4/6"></div>
 				<NavLink to={"/projects"} className="m-4 mt-10">
 					<button className="btn btn-secondary btn-lg ">
-						Look at my projects{" "}
-						<ArrowUpRightIcon className="w-5 h-5" />
+						Look at my projects <ArrowUpRightIcon className="w-5 h-5" />
 					</button>
 				</NavLink>
 				<NavLink to={"/contact"} className="m-4">

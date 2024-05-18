@@ -37,7 +37,7 @@ const Contact = () => {
 				{/* <IconDeviceMobileMessage stroke={1} className="w-24 h-24" /> */}
 				<div
 					id="profile"
-					className="w-44 h-44 md:w-72 md:h-72 xl:w-96 xl:h-96"
+					className="w-44 h-44 md:w-72 md:h-72 xl:w-96 xl:h-96 rounded-full"
 				></div>
 				<div className="text-center text-2xl p-4 m-4 md:text-3xl lg:text-4xl md:w-2/4">
 					You can contact me via my Email, Phone or any social Media.

@@ -10,6 +10,7 @@ import {
 	ordered_projects_app,
 	ordered_projects_web,
 	ordered_projects_game,
+	presentations,
 } from "../components/ProjectCardsData";
 import ProjectSection from "../components/ProjectSection";
 import { useEffect } from "react";
@@ -53,22 +54,16 @@ const Projects = () => {
 								md:text-7xl
                         "
 							>
-								Welcome to{" "}
-								<span className="text-accent">Projects!</span>{" "}
+								Welcome to <span className="text-accent">Projects!</span>{" "}
 							</div>
 							<div className="text-3xl break-words p-4 text-center md:text-4xl">
-								This page contains a simple list of projects
-								I've done over the years. It can help you get an
-								insight into my skills and interests.
+								This page contains a simple list of projects I've done over the
+								years. It can help you get an insight into my skills and interests.
 								<br></br> <br></br> Some are based on{" "}
-								<span className="text-accent">
-									Data Science
-								</span>
-								, some are apps published on the{" "}
-								<span className="text-accent">Play Store</span>,
-								while some are{" "}
-								<span className="text-accent">Websites</span>,
-								and some are just projects I've done{" "}
+								<span className="text-accent">Data Science</span>, some are apps
+								published on the <span className="text-accent">Play Store</span>,
+								while some are <span className="text-accent">Websites</span>, and
+								some are just projects I've done{" "}
 								<span className="text-accent">for fun. </span>.
 							</div>
 						</div>
@@ -102,8 +97,7 @@ const Projects = () => {
 						className="text-xl tab tab-active"
 						onClick={(e) => {
 							// scroll to the element
-							const current_tab_section =
-								document.getElementById("major_projects");
+							const current_tab_section = document.getElementById("major_projects");
 							current_tab_section.scrollIntoView({
 								behavior: "smooth",
 							});
@@ -124,25 +118,18 @@ const Projects = () => {
 							document
 								.getElementById("thetabs")
 								.children[4].classList.remove("tab-active");
-
+							document
+								.getElementById("thetabs")
+								.children[5].classList.remove("tab-active");
 							// hide the others
-							document
-								.getElementById("mlds_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("app_dev_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("web_dev_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("game_dev_projects")
-								.classList.add("hidden");
+							document.getElementById("mlds_projects").classList.add("hidden");
+							document.getElementById("app_dev_projects").classList.add("hidden");
+							document.getElementById("web_dev_projects").classList.add("hidden");
+							document.getElementById("game_dev_projects").classList.add("hidden");
+							document.getElementById("presentations").classList.add("hidden");
 
 							// show the current one
-							document
-								.getElementById("major_projects")
-								.classList.remove("hidden");
+							document.getElementById("major_projects").classList.remove("hidden");
 						}}
 					>
 						{" "}
@@ -167,32 +154,24 @@ const Projects = () => {
 							document
 								.getElementById("thetabs")
 								.children[4].classList.remove("tab-active");
-
+							document
+								.getElementById("thetabs")
+								.children[5].classList.remove("tab-active");
 							// scroll to the element
-							const current_tab_section =
-								document.getElementById("mlds_projects");
+							const current_tab_section = document.getElementById("mlds_projects");
 							current_tab_section.scrollIntoView({
 								behavior: "smooth",
 							});
 
 							// hide the others
-							document
-								.getElementById("major_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("app_dev_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("web_dev_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("game_dev_projects")
-								.classList.add("hidden");
+							document.getElementById("major_projects").classList.add("hidden");
+							document.getElementById("app_dev_projects").classList.add("hidden");
+							document.getElementById("web_dev_projects").classList.add("hidden");
+							document.getElementById("game_dev_projects").classList.add("hidden");
+							document.getElementById("presentations").classList.add("hidden");
 
 							// show the current one
-							document
-								.getElementById("mlds_projects")
-								.classList.remove("hidden");
+							document.getElementById("mlds_projects").classList.remove("hidden");
 						}}
 					>
 						ML & DS
@@ -216,32 +195,24 @@ const Projects = () => {
 							document
 								.getElementById("thetabs")
 								.children[4].classList.remove("tab-active");
-
+							document
+								.getElementById("thetabs")
+								.children[5].classList.remove("tab-active");
 							// scroll to the element
-							const current_tab_section =
-								document.getElementById("app_dev_projects");
+							const current_tab_section = document.getElementById("app_dev_projects");
 							current_tab_section.scrollIntoView({
 								behavior: "smooth",
 							});
 
 							// hide the others
-							document
-								.getElementById("mlds_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("major_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("web_dev_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("game_dev_projects")
-								.classList.add("hidden");
+							document.getElementById("mlds_projects").classList.add("hidden");
+							document.getElementById("major_projects").classList.add("hidden");
+							document.getElementById("web_dev_projects").classList.add("hidden");
+							document.getElementById("game_dev_projects").classList.add("hidden");
+							document.getElementById("presentations").classList.add("hidden");
 
 							// show the current one
-							document
-								.getElementById("app_dev_projects")
-								.classList.remove("hidden");
+							document.getElementById("app_dev_projects").classList.remove("hidden");
 						}}
 					>
 						PC & Mobile Apps
@@ -267,30 +238,19 @@ const Projects = () => {
 								.children[4].classList.remove("tab-active");
 
 							// scroll to the element
-							const current_tab_section =
-								document.getElementById("web_dev_projects");
+							const current_tab_section = document.getElementById("web_dev_projects");
 							current_tab_section.scrollIntoView({
 								behavior: "smooth",
 							});
 
 							// hide the others
-							document
-								.getElementById("mlds_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("major_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("app_dev_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("game_dev_projects")
-								.classList.add("hidden");
+							document.getElementById("mlds_projects").classList.add("hidden");
+							document.getElementById("major_projects").classList.add("hidden");
+							document.getElementById("app_dev_projects").classList.add("hidden");
+							document.getElementById("game_dev_projects").classList.add("hidden");
 
 							// show the current one
-							document
-								.getElementById("web_dev_projects")
-								.classList.remove("hidden");
+							document.getElementById("web_dev_projects").classList.remove("hidden");
 						}}
 					>
 						Web Dev
@@ -314,6 +274,9 @@ const Projects = () => {
 							document
 								.getElementById("thetabs")
 								.children[2].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[5].classList.remove("tab-active");
 
 							// scroll to the element
 							const current_tab_section =
@@ -323,26 +286,59 @@ const Projects = () => {
 							});
 
 							// hide the others
-							document
-								.getElementById("mlds_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("major_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("app_dev_projects")
-								.classList.add("hidden");
-							document
-								.getElementById("web_dev_projects")
-								.classList.add("hidden");
+							document.getElementById("mlds_projects").classList.add("hidden");
+							document.getElementById("major_projects").classList.add("hidden");
+							document.getElementById("app_dev_projects").classList.add("hidden");
+							document.getElementById("web_dev_projects").classList.add("hidden");
+							document.getElementById("presentations").classList.add("hidden");
 
 							// show the current one
-							document
-								.getElementById("game_dev_projects")
-								.classList.remove("hidden");
+							document.getElementById("game_dev_projects").classList.remove("hidden");
 						}}
 					>
 						Game Dev
+					</div>
+					<div
+						className="text-xl tab"
+						onClick={(e) => {
+							// make this tab active
+							document
+								.getElementById("thetabs")
+								.children[5].classList.add("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[3].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[1].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[0].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[2].classList.remove("tab-active");
+							document
+								.getElementById("thetabs")
+								.children[4].classList.remove("tab-active");
+
+							// scroll to the element
+							const current_tab_section = document.getElementById("presentations");
+							current_tab_section.scrollIntoView({
+								behavior: "smooth",
+							});
+
+							// hide the others
+							document.getElementById("mlds_projects").classList.add("hidden");
+							document.getElementById("major_projects").classList.add("hidden");
+							document.getElementById("app_dev_projects").classList.add("hidden");
+							document.getElementById("web_dev_projects").classList.add("hidden");
+							document.getElementById("game_dev_projects").classList.add("hidden");
+
+							// show the current one
+							document.getElementById("presentations").classList.remove("hidden");
+						}}
+					>
+						Presentations
 					</div>
 				</div>
 			</div>
@@ -357,34 +353,22 @@ const Projects = () => {
 
 			{/* sections */}
 			<div id="major_projects" className="">
-				<ProjectSection
-					ordered_projects={ordered_projects_major}
-					svg_name={"majorssvg"}
-				/>
+				<ProjectSection ordered_projects={ordered_projects_major} svg_name={"majorssvg"} />
 			</div>
 			<div id="mlds_projects" className="hidden">
-				<ProjectSection
-					ordered_projects={ordered_projects_mlds}
-					svg_name={"mldssvg"}
-				/>
+				<ProjectSection ordered_projects={ordered_projects_mlds} svg_name={"mldssvg"} />
 			</div>
 			<div id="app_dev_projects" className="hidden">
-				<ProjectSection
-					ordered_projects={ordered_projects_app}
-					svg_name={"app"}
-				/>
+				<ProjectSection ordered_projects={ordered_projects_app} svg_name={"app"} />
 			</div>
 			<div id="web_dev_projects" className="hidden">
-				<ProjectSection
-					ordered_projects={ordered_projects_web}
-					svg_name={"devsvg"}
-				/>
+				<ProjectSection ordered_projects={ordered_projects_web} svg_name={"devsvg"} />
 			</div>
 			<div id="game_dev_projects" className="hidden">
-				<ProjectSection
-					ordered_projects={ordered_projects_game}
-					svg_name={"devsvg"}
-				/>
+				<ProjectSection ordered_projects={ordered_projects_game} svg_name={"devsvg"} />
+			</div>
+			<div id="presentations" className="hidden">
+				<ProjectSection ordered_projects={presentations} svg_name={"devsvg"} />
 			</div>
 
 			<div class="wrapper pb-9 m.t-16">
@@ -400,9 +384,7 @@ const Projects = () => {
 				id="about_section"
 				className="flex flex-col items-center justify-center mb-4 p-4"
 			>
-				<div className="text-4xl text-center p-4">
-					Interested in Hiring?{" "}
-				</div>
+				<div className="text-4xl text-center p-4">Interested in Hiring? </div>
 				{/* <IconUserQuestion className="w-16 h-16" /> */}
 				<div className="text-center text-2xl md:text-4xl break-words"></div>
 				<NavLink to={"/projects"} className="m-4 mt-10">
