@@ -3,7 +3,6 @@ import Card from "./Card";
 import { ThemeContext } from "../context/ThemeContext";
 
 const ProjectSection = ({ ordered_projects, svg_name }) => {
-  const { theme } = React.useContext(ThemeContext);
   return (
     <section className="p-2 m-2 mb-20 text-xl text-base-content">
       <div className="flex justify-center p-4">

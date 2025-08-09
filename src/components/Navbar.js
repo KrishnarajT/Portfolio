@@ -139,7 +139,7 @@ export function Navbar() {
                           className="text-lg"
                           onClick={() => setTheme("light")}
                         >
-                          <a>
+                          <a href="/">
                             <SunIcon className="w-8 h-8" />
                             Light
                           </a>
@@ -149,7 +149,7 @@ export function Navbar() {
                           data-set-theme="dracula"
                           onClick={() => setTheme("dark")}
                         >
-                          <a>
+                          <a href="/">
                             <MoonIcon className="w-8 h-6" />
                             Dark
                           </a>

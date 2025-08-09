@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import {
 	IconAlphabetLatin,
-	IconArrowRight,
 	IconArrowUpRight,
 	IconAxe,
 	IconBooks,
